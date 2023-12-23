@@ -1,0 +1,313 @@
+2023-12-24 00:09:32.704 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-12-24 00:09:32.750 +02:00 [DBG] Hosting starting
+2023-12-24 00:09:32.815 +02:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 96B2898668BD7D1A42B838ABCF1EA7C4F34CC425)
+2023-12-24 00:09:32.823 +02:00 [INF] Now listening on: https://localhost:7166
+2023-12-24 00:09:32.823 +02:00 [INF] Now listening on: http://localhost:5193
+2023-12-24 00:09:32.823 +02:00 [DBG] Loaded hosting startup assembly TaskManagmentSystem.Api
+2023-12-24 00:09:32.823 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-24 00:09:32.824 +02:00 [INF] Hosting environment: Development
+2023-12-24 00:09:32.824 +02:00 [INF] Content root path: /Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Api/
+2023-12-24 00:09:32.824 +02:00 [DBG] Hosting started
+2023-12-24 00:11:14.545 +02:00 [DBG] Connection id "0HN040GA3IMUF" received FIN.
+2023-12-24 00:11:14.553 +02:00 [DBG] Connection id "0HN040GA3IMUF" accepted.
+2023-12-24 00:11:14.554 +02:00 [DBG] Connection id "0HN040GA3IMUF" started.
+2023-12-24 00:11:14.554 +02:00 [DBG] Connection id "0HN040GA3IMUG" accepted.
+2023-12-24 00:11:14.555 +02:00 [DBG] Connection id "0HN040GA3IMUG" started.
+2023-12-24 00:11:14.558 +02:00 [DBG] Connection id "0HN040GA3IMUF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-24 00:11:14.562 +02:00 [DBG] Connection id "0HN040GA3IMUF" disconnecting.
+2023-12-24 00:11:14.563 +02:00 [DBG] Connection id "0HN040GA3IMUF" stopped.
+2023-12-24 00:11:14.577 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5193/api/users - -
+2023-12-24 00:11:14.579 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-12-24 00:11:14.599 +02:00 [DBG] The request path  does not match the path filter
+2023-12-24 00:11:14.602 +02:00 [DBG] Https port '7166' discovered from server endpoints.
+2023-12-24 00:11:14.603 +02:00 [DBG] Redirecting to 'https://localhost:7166/api/users'.
+2023-12-24 00:11:14.604 +02:00 [DBG] Connection id "0HN040GA3IMUG" completed keep alive response.
+2023-12-24 00:11:14.605 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5193/api/users - - - 307 0 - 31.0465ms
+2023-12-24 00:11:14.607 +02:00 [DBG] Connection id "0HN040GA3IMUH" accepted.
+2023-12-24 00:11:14.607 +02:00 [DBG] Connection id "0HN040GA3IMUH" received FIN.
+2023-12-24 00:11:14.607 +02:00 [DBG] Connection id "0HN040GA3IMUH" started.
+2023-12-24 00:11:14.607 +02:00 [DBG] Connection id "0HN040GA3IMUI" accepted.
+2023-12-24 00:11:14.607 +02:00 [DBG] Connection id "0HN040GA3IMUH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-24 00:11:14.607 +02:00 [DBG] Connection id "0HN040GA3IMUI" started.
+2023-12-24 00:11:14.608 +02:00 [DBG] Connection id "0HN040GA3IMUH" disconnecting.
+2023-12-24 00:11:14.608 +02:00 [DBG] Connection id "0HN040GA3IMUH" stopped.
+2023-12-24 00:11:14.651 +02:00 [DBG] Connection 0HN040GA3IMUI established using the following protocol: "Tls12"
+2023-12-24 00:11:14.652 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7166/api/users - -
+2023-12-24 00:11:14.652 +02:00 [DBG] The request path  does not match the path filter
+2023-12-24 00:11:14.663 +02:00 [DBG] 1 candidate(s) found for the request path '/api/users'
+2023-12-24 00:11:14.665 +02:00 [DBG] Endpoint 'TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api)' with route pattern 'api/users' is valid for the request path '/api/users'
+2023-12-24 00:11:14.665 +02:00 [DBG] Request matched endpoint 'TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api)'
+2023-12-24 00:11:14.666 +02:00 [INF] Executing endpoint 'TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api)'
+2023-12-24 00:11:14.677 +02:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllTasks() on controller TaskManagmentSystem.Api.TaskController (TaskManagmentSystem.Api).
+2023-12-24 00:11:14.677 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-24 00:11:14.677 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-24 00:11:14.677 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-12-24 00:11:14.678 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-24 00:11:14.678 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-12-24 00:11:14.678 +02:00 [DBG] Executing controller factory for controller TaskManagmentSystem.Api.TaskController (TaskManagmentSystem.Api)
+2023-12-24 00:11:14.723 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-12-24 00:11:14.963 +02:00 [INF] Entity Framework Core 6.0.25 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: None
+2023-12-24 00:11:14.998 +02:00 [DBG] Executed controller factory for controller TaskManagmentSystem.Api.TaskController (TaskManagmentSystem.Api)
+2023-12-24 00:11:14.999 +02:00 [INF] Attempting to retrieve all tasks.
+2023-12-24 00:11:15.016 +02:00 [DBG] Compiling query expression: 
+'DbSet<TaskEntity>()'
+2023-12-24 00:11:15.081 +02:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<TaskEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: TaskEntity.TaskId (string) Required PK AfterSave:Throw ValueGenerated.OnAdd MaxLength(36) Ansi, 0], [Property: TaskEntity.CreatedAt (DateTime) Required, 1], [Property: TaskEntity.Description (string) Required MaxLength(255), 2], [Property: TaskEntity.DueDate (DateTime) Required, 3], [Property: TaskEntity.IsActive (bool) Required, 4], [Property: TaskEntity.Title (string) Required MaxLength(255), 5], [Property: TaskEntity.UpdatedAt (DateTime) Required, 6] }
+        SELECT t.TaskId, t.CreatedAt, t.Description, t.DueDate, t.IsActive, t.Title, t.UpdatedAt
+        FROM Tasks AS t), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, TaskEntity>, 
+    TaskManagmentSystem.Infrastructure.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)'
+2023-12-24 00:11:15.094 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-12-24 00:11:15.108 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (11ms).
+2023-12-24 00:11:15.109 +02:00 [DBG] Opening connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-24 00:11:29.721 +02:00 [ERR] An error occurred using the connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-24 00:11:29.741 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'TaskManagmentSystem.Infrastructure.ApplicationDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 40 - Could not open a connection to SQL Server: Could not open a connection to SQL Server)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__19_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 40 - Could not open a connection to SQL Server: Could not open a connection to SQL Server)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open()
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.<>c.<MoveNext>b__19_0(DbContext _, Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+2023-12-24 00:11:29.743 +02:00 [ERR] An error occurred while retrieving tasks: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 40 - Could not open a connection to SQL Server: Could not open a connection to SQL Server)
+2023-12-24 00:11:29.744 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-12-24 00:11:29.745 +02:00 [DBG] No information found on request to perform content negotiation.
+2023-12-24 00:11:29.745 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-12-24 00:11:29.745 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-12-24 00:11:29.746 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2023-12-24 00:11:29.746 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-12-24 00:11:29.752 +02:00 [INF] Executed action TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api) in 15070.7074ms
+2023-12-24 00:11:29.753 +02:00 [INF] Executed endpoint 'TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api)'
+2023-12-24 00:11:29.753 +02:00 [DBG] Connection id "0HN040GA3IMUI" completed keep alive response.
+2023-12-24 00:11:29.754 +02:00 [DBG] 'ApplicationDbContext' disposed.
+2023-12-24 00:11:29.755 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7166/api/users - - - 400 - text/plain;+charset=utf-8 15102.8973ms
+2023-12-24 00:12:57.923 +02:00 [INF] Application is shutting down...
+2023-12-24 00:12:57.924 +02:00 [DBG] Hosting stopping
+2023-12-24 00:12:57.932 +02:00 [DBG] Connection id "0HN040GA3IMUG" disconnecting.
+2023-12-24 00:12:57.932 +02:00 [DBG] Connection id "0HN040GA3IMUI" disconnecting.
+2023-12-24 00:12:57.933 +02:00 [DBG] Connection id "0HN040GA3IMUG" stopped.
+2023-12-24 00:12:57.934 +02:00 [DBG] Connection id "0HN040GA3IMUG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-24 00:12:57.934 +02:00 [DBG] Connection id "0HN040GA3IMUI" stopped.
+2023-12-24 00:12:57.934 +02:00 [DBG] Connection id "0HN040GA3IMUI" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-24 00:12:57.936 +02:00 [DBG] Hosting stopped
+2023-12-24 00:13:09.013 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-12-24 00:13:09.071 +02:00 [DBG] Hosting starting
+2023-12-24 00:13:09.163 +02:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 96B2898668BD7D1A42B838ABCF1EA7C4F34CC425)
+2023-12-24 00:13:09.277 +02:00 [INF] Now listening on: https://localhost:7166
+2023-12-24 00:13:09.277 +02:00 [INF] Now listening on: http://localhost:5193
+2023-12-24 00:13:09.277 +02:00 [DBG] Loaded hosting startup assembly TaskManagmentSystem.Api
+2023-12-24 00:13:09.277 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-24 00:13:09.278 +02:00 [INF] Hosting environment: Development
+2023-12-24 00:13:09.278 +02:00 [INF] Content root path: /Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Api/
+2023-12-24 00:13:09.278 +02:00 [DBG] Hosting started
+2023-12-24 00:13:09.351 +02:00 [DBG] Connection id "0HN040HCAEDKD" accepted.
+2023-12-24 00:13:09.353 +02:00 [DBG] Connection id "0HN040HCAEDKD" started.
+2023-12-24 00:13:09.410 +02:00 [DBG] Connection 0HN040HCAEDKD established using the following protocol: "Tls12"
+2023-12-24 00:13:09.440 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7166/swagger - -
+2023-12-24 00:13:09.443 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-12-24 00:13:09.469 +02:00 [DBG] Connection id "0HN040HCAEDKD" completed keep alive response.
+2023-12-24 00:13:09.471 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7166/swagger - - - 301 0 - 33.4433ms
+2023-12-24 00:13:09.476 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7166/swagger/index.html - -
+2023-12-24 00:13:09.574 +02:00 [DBG] Connection id "0HN040HCAEDKD" completed keep alive response.
+2023-12-24 00:13:09.574 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7166/swagger/index.html - - - 200 - text/html;charset=utf-8 98.0320ms
+2023-12-24 00:13:09.772 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7166/swagger/v1/swagger.json - -
+2023-12-24 00:13:09.816 +02:00 [DBG] Connection id "0HN040HCAEDKD" completed keep alive response.
+2023-12-24 00:13:09.816 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7166/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 43.8495ms
+2023-12-24 00:13:16.570 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7166/api/tasks - -
+2023-12-24 00:13:16.575 +02:00 [DBG] The request path  does not match the path filter
+2023-12-24 00:13:16.604 +02:00 [DBG] 1 candidate(s) found for the request path '/api/tasks'
+2023-12-24 00:13:16.611 +02:00 [DBG] Endpoint 'TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api)' with route pattern 'api/tasks' is valid for the request path '/api/tasks'
+2023-12-24 00:13:16.611 +02:00 [DBG] Request matched endpoint 'TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api)'
+2023-12-24 00:13:16.614 +02:00 [INF] Executing endpoint 'TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api)'
+2023-12-24 00:13:16.638 +02:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllTasks() on controller TaskManagmentSystem.Api.TaskController (TaskManagmentSystem.Api).
+2023-12-24 00:13:16.638 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-24 00:13:16.638 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-24 00:13:16.639 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-12-24 00:13:16.639 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-24 00:13:16.639 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-12-24 00:13:16.639 +02:00 [DBG] Executing controller factory for controller TaskManagmentSystem.Api.TaskController (TaskManagmentSystem.Api)
+2023-12-24 00:13:16.718 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-12-24 00:13:17.032 +02:00 [INF] Entity Framework Core 6.0.25 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: None
+2023-12-24 00:13:17.082 +02:00 [DBG] Executed controller factory for controller TaskManagmentSystem.Api.TaskController (TaskManagmentSystem.Api)
+2023-12-24 00:13:22.806 +02:00 [INF] Attempting to retrieve all tasks.
+2023-12-24 00:13:27.210 +02:00 [DBG] Compiling query expression: 
+'DbSet<TaskEntity>()'
+2023-12-24 00:13:27.320 +02:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<TaskEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: TaskEntity.TaskId (string) Required PK AfterSave:Throw ValueGenerated.OnAdd MaxLength(36) Ansi, 0], [Property: TaskEntity.CreatedAt (DateTime) Required, 1], [Property: TaskEntity.Description (string) Required MaxLength(255), 2], [Property: TaskEntity.DueDate (DateTime) Required, 3], [Property: TaskEntity.IsActive (bool) Required, 4], [Property: TaskEntity.Title (string) Required MaxLength(255), 5], [Property: TaskEntity.UpdatedAt (DateTime) Required, 6] }
+        SELECT t.TaskId, t.CreatedAt, t.Description, t.DueDate, t.IsActive, t.Title, t.UpdatedAt
+        FROM Tasks AS t), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, TaskEntity>, 
+    TaskManagmentSystem.Infrastructure.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)'
+2023-12-24 00:13:27.342 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-12-24 00:13:27.367 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (23ms).
+2023-12-24 00:13:27.370 +02:00 [DBG] Opening connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-24 00:13:42.032 +02:00 [ERR] An error occurred using the connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-24 00:13:42.054 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'TaskManagmentSystem.Infrastructure.ApplicationDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 40 - Could not open a connection to SQL Server: Could not open a connection to SQL Server)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Microsoft.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 40 - Could not open a connection to SQL Server: Could not open a connection to SQL Server)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, Boolean encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean withFailover, SqlAuthenticationMethod authType)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+2023-12-24 00:14:23.316 +02:00 [ERR] An error occurred while retrieving tasks: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 40 - Could not open a connection to SQL Server: Could not open a connection to SQL Server)
+2023-12-24 00:14:23.370 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-12-24 00:14:23.372 +02:00 [DBG] No information found on request to perform content negotiation.
+2023-12-24 00:14:23.372 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-12-24 00:14:23.372 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-12-24 00:14:23.373 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2023-12-24 00:14:23.373 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2023-12-24 00:14:23.376 +02:00 [INF] Executed action TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api) in 66734.1827ms
+2023-12-24 00:14:23.377 +02:00 [INF] Executed endpoint 'TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api)'
+2023-12-24 00:14:23.377 +02:00 [DBG] Connection id "0HN040HCAEDKD" completed keep alive response.
+2023-12-24 00:14:23.378 +02:00 [DBG] 'ApplicationDbContext' disposed.
+2023-12-24 00:14:23.382 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7166/api/tasks - - - 400 - text/plain;+charset=utf-8 66810.9232ms
+2023-12-24 00:14:30.247 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7166/api/tasks - -
+2023-12-24 00:14:30.247 +02:00 [DBG] The request path  does not match the path filter
+2023-12-24 00:14:30.248 +02:00 [DBG] 1 candidate(s) found for the request path '/api/tasks'
+2023-12-24 00:14:30.248 +02:00 [DBG] Endpoint 'TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api)' with route pattern 'api/tasks' is valid for the request path '/api/tasks'
+2023-12-24 00:14:30.248 +02:00 [DBG] Request matched endpoint 'TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api)'
+2023-12-24 00:14:30.248 +02:00 [INF] Executing endpoint 'TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api)'
+2023-12-24 00:14:30.249 +02:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllTasks() on controller TaskManagmentSystem.Api.TaskController (TaskManagmentSystem.Api).
+2023-12-24 00:14:30.249 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-24 00:14:30.249 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-24 00:14:30.249 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-12-24 00:14:30.249 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-24 00:14:30.249 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-12-24 00:14:30.252 +02:00 [DBG] Executing controller factory for controller TaskManagmentSystem.Api.TaskController (TaskManagmentSystem.Api)
+2023-12-24 00:14:30.282 +02:00 [INF] Entity Framework Core 6.0.25 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: None
+2023-12-24 00:14:30.283 +02:00 [DBG] Executed controller factory for controller TaskManagmentSystem.Api.TaskController (TaskManagmentSystem.Api)
+2023-12-24 00:14:34.197 +02:00 [INF] Attempting to retrieve all tasks.
+2023-12-24 00:14:43.010 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-12-24 00:14:43.010 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-12-24 00:14:43.010 +02:00 [DBG] Opening connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-24 00:14:43.138 +02:00 [DBG] Opened connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-24 00:14:43.143 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[TaskId], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[IsActive], [t].[Title], [t].[UpdatedAt]
+FROM [Tasks] AS [t]
+2023-12-24 00:14:43.174 +02:00 [INF] Executed DbCommand (31ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[TaskId], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[IsActive], [t].[Title], [t].[UpdatedAt]
+FROM [Tasks] AS [t]
+2023-12-24 00:14:43.180 +02:00 [DBG] A data reader was disposed.
+2023-12-24 00:14:43.182 +02:00 [DBG] Closing connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-24 00:14:43.186 +02:00 [DBG] Closed connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-24 00:14:52.157 +02:00 [WRN] No tasks found.
+2023-12-24 00:14:53.997 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-12-24 00:14:53.997 +02:00 [DBG] No information found on request to perform content negotiation.
+2023-12-24 00:14:53.997 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-12-24 00:14:53.997 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-12-24 00:14:53.997 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2023-12-24 00:14:53.998 +02:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2023-12-24 00:14:53.998 +02:00 [INF] Executed action TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api) in 23746.8402ms
+2023-12-24 00:14:53.998 +02:00 [INF] Executed endpoint 'TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api)'
+2023-12-24 00:14:53.998 +02:00 [DBG] Connection id "0HN040HCAEDKD" completed keep alive response.
+2023-12-24 00:14:59.240 +02:00 [DBG] 'ApplicationDbContext' disposed.
+2023-12-24 00:14:59.242 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7166/api/tasks - - - 404 - text/plain;+charset=utf-8 28994.3315ms

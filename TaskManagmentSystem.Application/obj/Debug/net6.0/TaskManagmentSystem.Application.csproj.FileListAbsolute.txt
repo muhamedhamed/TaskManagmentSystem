@@ -1,0 +1,15 @@
+/Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Application/bin/Debug/net6.0/TaskManagmentSystem.Application.deps.json
+/Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Application/bin/Debug/net6.0/TaskManagmentSystem.Application.dll
+/Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Application/bin/Debug/net6.0/TaskManagmentSystem.Application.pdb
+/Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Application/bin/Debug/net6.0/TaskManagmentSystem.Domain.dll
+/Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Application/bin/Debug/net6.0/TaskManagmentSystem.Domain.pdb
+/Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Application/obj/Debug/net6.0/TaskManagmentSystem.Application.csproj.AssemblyReference.cache
+/Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Application/obj/Debug/net6.0/TaskManagmentSystem.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Application/obj/Debug/net6.0/TaskManagmentSystem.Application.AssemblyInfoInputs.cache
+/Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Application/obj/Debug/net6.0/TaskManagmentSystem.Application.AssemblyInfo.cs
+/Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Application/obj/Debug/net6.0/TaskManagmentSystem.Application.csproj.CoreCompileInputs.cache
+/Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Application/obj/Debug/net6.0/TaskManagmentSystem.Application.csproj.CopyComplete
+/Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Application/obj/Debug/net6.0/TaskManagmentSystem.Application.dll
+/Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Application/obj/Debug/net6.0/refint/TaskManagmentSystem.Application.dll
+/Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Application/obj/Debug/net6.0/TaskManagmentSystem.Application.pdb
+/Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Application/obj/Debug/net6.0/ref/TaskManagmentSystem.Application.dll

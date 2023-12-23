@@ -1,0 +1,11 @@
+/Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Domain/bin/Debug/net6.0/TaskManagmentSystem.Domain.deps.json
+/Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Domain/bin/Debug/net6.0/TaskManagmentSystem.Domain.dll
+/Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Domain/bin/Debug/net6.0/TaskManagmentSystem.Domain.pdb
+/Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Domain/obj/Debug/net6.0/TaskManagmentSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Domain/obj/Debug/net6.0/TaskManagmentSystem.Domain.AssemblyInfoInputs.cache
+/Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Domain/obj/Debug/net6.0/TaskManagmentSystem.Domain.AssemblyInfo.cs
+/Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Domain/obj/Debug/net6.0/TaskManagmentSystem.Domain.csproj.CoreCompileInputs.cache
+/Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Domain/obj/Debug/net6.0/TaskManagmentSystem.Domain.dll
+/Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Domain/obj/Debug/net6.0/refint/TaskManagmentSystem.Domain.dll
+/Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Domain/obj/Debug/net6.0/TaskManagmentSystem.Domain.pdb
+/Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Domain/obj/Debug/net6.0/ref/TaskManagmentSystem.Domain.dll
