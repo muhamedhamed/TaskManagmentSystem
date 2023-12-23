@@ -9,6 +9,7 @@
 /Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Infrastructure/obj/Debug/net6.0/TaskManagmentSystem.Infrastructure.AssemblyInfoInputs.cache
 /Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Infrastructure/obj/Debug/net6.0/TaskManagmentSystem.Infrastructure.AssemblyInfo.cs
 /Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Infrastructure/obj/Debug/net6.0/TaskManagmentSystem.Infrastructure.csproj.CoreCompileInputs.cache
+/Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Infrastructure/obj/Debug/net6.0/TaskManagmentSystem.Infrastructure.sourcelink.json
 /Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Infrastructure/obj/Debug/net6.0/TaskManagmentSystem.Infrastructure.csproj.CopyComplete
 /Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Infrastructure/obj/Debug/net6.0/TaskManagmentSystem.Infrastructure.dll
 /Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Infrastructure/obj/Debug/net6.0/refint/TaskManagmentSystem.Infrastructure.dll

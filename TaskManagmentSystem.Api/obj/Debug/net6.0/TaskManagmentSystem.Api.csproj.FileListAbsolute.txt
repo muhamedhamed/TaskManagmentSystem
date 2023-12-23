@@ -86,6 +86,7 @@
 /Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Api/obj/Debug/net6.0/TaskManagmentSystem.Api.csproj.CoreCompileInputs.cache
 /Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Api/obj/Debug/net6.0/TaskManagmentSystem.Api.MvcApplicationPartsAssemblyInfo.cs
 /Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Api/obj/Debug/net6.0/TaskManagmentSystem.Api.MvcApplicationPartsAssemblyInfo.cache
+/Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Api/obj/Debug/net6.0/TaskManagmentSystem.Api.sourcelink.json
 /Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Api/obj/Debug/net6.0/staticwebassets.build.json
 /Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Api/obj/Debug/net6.0/staticwebassets.development.json
 /Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Api/obj/Debug/net6.0/staticwebassets/msbuild.TaskManagmentSystem.Api.Microsoft.AspNetCore.StaticWebAssets.props

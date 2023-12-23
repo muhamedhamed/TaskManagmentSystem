@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.Extensions.Configuration;
+using TaskManagmentSystem.Domain.Entities;
 using TaskManagmentSystem.Domain.Interfaces;
 using TaskManagmentSystem.Domain.Interfaces.Repositories;
 
@@ -25,29 +26,47 @@ public class TaskService : ITaskService
         // _configuration = configuration;
     }
 
-    public TaskDto AddTask(TaskDto userDto)
-    {
-        throw new NotImplementedException();
-    }
-
-    public void DeleteTask(string userId)
-    {
-        throw new NotImplementedException();
-    }
-
     public IEnumerable<TaskDto> GetAllTasks()
     {
-          var tasksEntities = _unitOfWork.TaskRepository.GetAll();
+        var tasksEntities = _unitOfWork.TaskRepository.GetAll();
         return _mapper.Map<IEnumerable<TaskDto>>(tasksEntities);
     }
 
-    public TaskDto GetTaskById(string userId)
+    public TaskDto GetTaskById(string taskId)
     {
-        throw new NotImplementedException();
+        var taskEntity = _unitOfWork.TaskRepository.GetById(taskId);
+        return _mapper.Map<TaskDto>(taskEntity);
     }
 
-    public TaskDto UpdateTask(TaskDto userDto, string userId)
+    public TaskDto AddTask(TaskDto taskDto)
     {
-        throw new NotImplementedException();
+        var taskEntity = _mapper.Map<TaskEntity>(taskDto);
+        taskEntity.CreatedAt = DateTime.Now;
+        taskEntity.UpdatedAt = DateTime.Now;
+        _unitOfWork.TaskRepository.Add(taskEntity);
+        _unitOfWork.SaveChanges();
+        return taskDto;
+    }
+
+    public TaskDto UpdateTask(TaskDto taskDto, string taskId)
+    {
+        // Ad more validation
+        var existingTaskEntity = _unitOfWork.TaskRepository.GetById(taskId);
+        _mapper.Map(taskDto, existingTaskEntity);
+        existingTaskEntity.UpdatedAt = DateTime.Now;
+        _unitOfWork.TaskRepository.Update(existingTaskEntity);
+        _unitOfWork.SaveChanges();
+
+        return _mapper.Map<TaskDto>(existingTaskEntity);
+    }
+
+    public void DeleteTask(string taskId)
+    {
+        var taskEntity = _unitOfWork.TaskRepository.GetById(taskId);
+        if (taskEntity != null)
+        {
+            _unitOfWork.TaskRepository.Remove(taskEntity);
+            _unitOfWork.SaveChanges();
+        }
     }
 }
