@@ -14,6 +14,6 @@
         public bool IsActive { get; set; } // Soft delete flag
 
         // Navigation properties
-        // I will not consider the systm has No Navigation properties
+        public ICollection<TaskEntity> Tasks { get; set; } = new List<TaskEntity>();
     }
 }

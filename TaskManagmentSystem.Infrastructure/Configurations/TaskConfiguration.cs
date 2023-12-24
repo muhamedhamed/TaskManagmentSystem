@@ -6,9 +6,9 @@ namespace TaskManagmentSystem.Infrastructure.Configuration;
 
 public class TaskConfiguration : IEntityTypeConfiguration<TaskEntity>
 {
-public void Configure(EntityTypeBuilder<TaskEntity> builder)
+    public void Configure(EntityTypeBuilder<TaskEntity> builder)
     {
-         // Primary Key configuration
+        // Primary Key configuration
         builder.HasKey(u => u.TaskId);
 
         // Auto-generation of User Id
@@ -25,5 +25,9 @@ public void Configure(EntityTypeBuilder<TaskEntity> builder)
         builder.Property(u => u.Description)
             .IsRequired()
             .HasMaxLength(255); // Adjust the length as needed
+
+        builder.HasOne(t => t.User)
+            .WithMany(u => u.Tasks)
+            .HasForeignKey(t => t.TaskOwnerId);
     }
 }

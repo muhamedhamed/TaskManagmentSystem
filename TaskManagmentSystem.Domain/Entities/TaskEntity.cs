@@ -10,4 +10,8 @@ public class TaskEntity
     public DateTime CreatedAt { get; set; }
     public DateTime UpdatedAt { get; set; }
     public bool IsActive { get; set; } // Soft delete flag will be used in the future updates
+
+    // Navigation properties
+    public string TaskOwnerId { get; set; }
+    public User User { get; set; }
 }

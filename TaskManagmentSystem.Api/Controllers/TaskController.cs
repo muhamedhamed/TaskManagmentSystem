@@ -103,6 +103,7 @@ public class TaskController : ControllerBase
                 return BadRequest(ModelState);
             }
 
+
             var result = _taskService.AddTask(taskDto);
 
             _logger.LogInformation($"Successfully created a new task with ID: {result.TaskId}");
@@ -152,12 +153,12 @@ public class TaskController : ControllerBase
                 return NotFound($"Task with ID {id} not found.");
             }
 
-            // var taskIdFromToken = User.Claims.FirstOrDefault(c => c.Type == "taskId")?.Value;
-            // if (existingTask.TaskId != taskIdFromToken)
-            // {
-            //     _logger.LogError("Task does not have permission to update this task info.");
-            //     return Forbid("Task does not have permission to update this task info.");
-            // }
+            var userIdFromToken = User.Claims.FirstOrDefault(c => c.Type == "userId")?.Value;
+            if (existingTask.TaskOwnerId != userIdFromToken)
+            {
+                _logger.LogError("User does not have permission to update this task info.");
+                return Forbid("User does not have permission to update this task info.");
+            }
 
             // Update the user
             _taskService.UpdateTask(taskDto, id);
@@ -195,12 +196,12 @@ public class TaskController : ControllerBase
                 return NotFound($"Task with ID {id} not found.");
             }
 
-            // var taskIdFromToken = User.Claims.FirstOrDefault(c => c.Type == "taskId")?.Value;
-            // if (existingTask.TaskId != taskIdFromToken)
-            // {
-            //     _logger.LogError("Task does not have permission to delete this task info.");
-            //     return Forbid("Task does not have permission to delete this task info.");
-            // }
+            var userIdFromToken = User.Claims.FirstOrDefault(c => c.Type == "userId")?.Value;
+            if (existingTask.TaskOwnerId != userIdFromToken)
+            {
+                _logger.LogError("User does not have permission to delete this task info.");
+                return Forbid("User does not have permission to delete this task info.");
+            }
 
             // Delete the task
             _taskService.DeleteTask(id);

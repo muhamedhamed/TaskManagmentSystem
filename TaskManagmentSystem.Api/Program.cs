@@ -1,4 +1,6 @@
+using System.Text;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Serilog;
 using TaskManagmentSystem.Application;
 using TaskManagmentSystem.Application.Interfaces;
@@ -54,6 +56,22 @@ builder.Services.AddScoped<ITaskService, TaskService>();
 builder.Services.AddScoped<IUserService, UserService>();
 
 builder.Services.AddAutoMapper(typeof(MappingProfile));
+
+builder.Services.AddAuthentication("Bearer")
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = builder.Configuration["Authentication:Issuer"],
+        ValidAudience = builder.Configuration["Authentication:Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(
+                             Encoding.ASCII.GetBytes(builder.Configuration["Authentication:SecretForKey"]))
+    };
+});
 
 var app = builder.Build();
 
