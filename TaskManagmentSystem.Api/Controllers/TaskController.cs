@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using TaskManagmentSystem.Application;
+using TaskManagmentSystem.Application.Dtos;
 
 namespace TaskManagmentSystem.Api;
 
@@ -81,7 +82,7 @@ public class TaskController : ControllerBase
 
     [HttpPost]
     [ActionName("AddTask")]
-    // [Authorize]
+    [Authorize]
     public IActionResult AddTask([FromBody] TaskDto taskDto)
     {
         try
@@ -116,7 +117,7 @@ public class TaskController : ControllerBase
 
     [HttpPut("{id}")]
     [ActionName("UpdateTask")]
-    // [Authorize]
+    [Authorize]
     public IActionResult UpdateTask(string id, [FromBody] TaskDto taskDto)
     {
         try
@@ -173,7 +174,7 @@ public class TaskController : ControllerBase
 
     [HttpDelete("{id}")]
     [ActionName("DeleteTask")]
-    // [Authorize]
+    [Authorize]
     public IActionResult DeleteTask(string id)
     {
         try

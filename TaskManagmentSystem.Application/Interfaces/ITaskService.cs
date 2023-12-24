@@ -1,4 +1,6 @@
-﻿namespace TaskManagmentSystem.Application;
+﻿using TaskManagmentSystem.Application.Dtos;
+
+namespace TaskManagmentSystem.Application;
 
 public interface ITaskService
 {

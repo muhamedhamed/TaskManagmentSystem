@@ -1,4 +1,4 @@
-﻿namespace TaskManagmentSystem.Application;
+﻿namespace TaskManagmentSystem.Application.Dtos;
 
 public class TaskDto
 {

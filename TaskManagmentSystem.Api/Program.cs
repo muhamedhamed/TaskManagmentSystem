@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 using TaskManagmentSystem.Application;
+using TaskManagmentSystem.Application.Interfaces;
 using TaskManagmentSystem.Application.Mapper;
 using TaskManagmentSystem.Application.Services;
 using TaskManagmentSystem.Domain.Interfaces;
@@ -45,10 +46,12 @@ builder.Services.AddScoped<ApplicationDbContext>();
 builder.Services.AddCors();
 
 builder.Services.AddScoped<ITaskRepository, TaskRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
 
 builder.Services.AddScoped<ITaskService, TaskService>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 

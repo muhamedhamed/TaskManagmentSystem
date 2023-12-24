@@ -3,7 +3,7 @@ using TaskManagmentSystem.Domain.Interfaces.Repositories;
 
 namespace TaskManagmentSystem.Domain.Interfaces;
 
-public interface ITaskRepository : IGenericRepository<TaskEntity>
+public interface IUserRepository: IGenericRepository<User>
 {
-// Will add New Task Interfaces here
+     User GetUserByEmailAndPassword(string email, string password);
 }

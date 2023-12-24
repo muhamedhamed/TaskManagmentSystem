@@ -10,13 +10,17 @@ public class UnitOfWork : IUnitOfWork
     private IDbContextTransaction _transaction;
 
     public UnitOfWork(ApplicationDbContext dbContext,
-                         ITaskRepository taskRepository)
+                         ITaskRepository taskRepository,
+                         IUserRepository userRepository)
     {
         _dbContext = dbContext;
         TaskRepository = taskRepository;
+        UserRepository =userRepository;
     }
 
     public ITaskRepository TaskRepository { get; }
+
+    public IUserRepository UserRepository { get; }
 
     public void BeginTransaction()
     {

@@ -24,11 +24,14 @@ public class ApplicationDbContext : DbContext
 
     // Define DbSet properties for your entities
     public DbSet<TaskEntity> Tasks { get; set; }
+    public DbSet<User> Users { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
 
         modelBuilder.ApplyConfiguration(new TaskConfiguration());
+        modelBuilder.ApplyConfiguration(new UserConfiguration());
+
     }
 }
