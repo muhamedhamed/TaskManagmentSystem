@@ -1,0 +1,1115 @@
+{
+	"info": {
+		"_postman_id": "adc55a9b-8ca3-4d50-b036-77f1aff1681d",
+		"name": "Task Management System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31486509"
+	},
+	"item": [
+		{
+			"name": "Get All Tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5193/api/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5193",
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Tasks",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5193/api/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5193",
+							"path": [
+								"api",
+								"tasks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Dec 2023 21:08:01 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"taskId\": \"dc5f0632-aec6-49c9-b044-a168b9dffc81\",\n        \"title\": \"Sample Task\",\n        \"description\": \"This is a sample task\",\n        \"dueDate\": \"2023-12-31T12:00:00\",\n        \"taskOwnerId\": \"dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4\",\n        \"createdAt\": \"2023-12-24T23:05:42.27659\",\n        \"updatedAt\": \"2023-12-24T23:05:42.27659\",\n        \"isActive\": true\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Create New Task",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYmI2M2RiYi01MWEzLTRkM2UtOTNhNC0yZThmMDRhOGQzYjQiLCJ1c2VySWQiOiJkYmI2M2RiYi01MWEzLTRkM2UtOTNhNC0yZThmMDRhOGQzYjQiLCJlbWFpbCI6Im1vaGFtZWRAZXhhbXBsZS5jb20iLCJwYXNzd29yZCI6IlBhc3N3b3JkMTIzIiwiZXhwIjoxNzAzNDUzMzc4LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MTEyIiwiYXVkIjoidGFza19tYW5hZ21lbnRfc3lzdGVtIn0.Rjd3kLvpSYVjPq3aAcRj4V6BMcykV1RwmWRjkafnYXo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"TaskId\": \"dc5f0632-aec6-49c9-b044-a168b9dffc81\",\n    \"Title\": \"Sample Task\",\n    \"Description\": \"This is a sample task\",\n    \"DueDate\": \"2023-12-31T12:00:00\", // ISO 8601 format\n    \"CreatedAt\": \"2023-12-23T08:00:00\",\n    \"UpdatedAt\": \"2023-12-23T08:00:00\",\n    \"IsActive\": true,\n    \"TaskOwnerId\": \"dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5193/api/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5193",
+					"path": [
+						"api",
+						"tasks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create New Task",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"TaskId\": \"dc5f0632-aec6-49c9-b044-a168b9dffc81\",\n    \"Title\": \"Sample Task\",\n    \"Description\": \"This is a sample task\",\n    \"DueDate\": \"2023-12-31T12:00:00\", // ISO 8601 format\n    \"CreatedAt\": \"2023-12-23T08:00:00\",\n    \"UpdatedAt\": \"2023-12-23T08:00:00\",\n    \"IsActive\": true,\n    \"TaskOwnerId\": \"dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5193/api/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5193",
+							"path": [
+								"api",
+								"tasks"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Dec 2023 21:05:42 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Location",
+							"value": "https://localhost:7166/api/tasks"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"taskId\": \"dc5f0632-aec6-49c9-b044-a168b9dffc81\",\n    \"title\": \"Sample Task\",\n    \"description\": \"This is a sample task\",\n    \"dueDate\": \"2023-12-31T12:00:00\",\n    \"taskOwnerId\": \"dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4\",\n    \"createdAt\": \"2023-12-23T08:00:00\",\n    \"updatedAt\": \"2023-12-23T08:00:00\",\n    \"isActive\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Task By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5193/api/tasks/dc5f0632-aec6-49c9-b044-a168b9dffc81",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5193",
+					"path": [
+						"api",
+						"tasks",
+						"dc5f0632-aec6-49c9-b044-a168b9dffc81"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get Task By Id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5193/api/tasks/dc5f0632-aec6-49c9-b044-a168b9dffc80",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5193",
+							"path": [
+								"api",
+								"tasks",
+								"dc5f0632-aec6-49c9-b044-a168b9dffc80"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 23 Dec 2023 23:31:30 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"taskId\": \"dc5f0632-aec6-49c9-b044-a168b9dffc80\",\n    \"title\": \"Sample Task\",\n    \"description\": \"This is a sample task\",\n    \"dueDate\": \"2023-12-31T12:00:00\",\n    \"createdAt\": \"2023-12-24T01:30:42.993327\",\n    \"updatedAt\": \"2023-12-24T01:30:42.993327\",\n    \"isActive\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Task",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYmI2M2RiYi01MWEzLTRkM2UtOTNhNC0yZThmMDRhOGQzYjQiLCJ1c2VySWQiOiJkYmI2M2RiYi01MWEzLTRkM2UtOTNhNC0yZThmMDRhOGQzYjQiLCJlbWFpbCI6Im1vaGFtZWRAZXhhbXBsZS5jb20iLCJwYXNzd29yZCI6IlBhc3N3b3JkMTIzIiwiZXhwIjoxNzAzNDUzMzc4LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MTEyIiwiYXVkIjoidGFza19tYW5hZ21lbnRfc3lzdGVtIn0.Rjd3kLvpSYVjPq3aAcRj4V6BMcykV1RwmWRjkafnYXo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"taskId\": \"dc5f0632-aec6-49c9-b044-a168b9dffc81\",\n    \"title\": \"Sample Task Updated\",\n    \"description\": \"This is a sample task\",\n    \"dueDate\": \"2023-12-31T12:00:00\",\n    \"createdAt\": \"2023-12-24T01:30:42.993327\",\n    \"updatedAt\": \"2023-12-24T01:30:42.993327\",\n    \"TaskOwnerId\": \"dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4\",\n    \"isActive\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5193/api/tasks/dc5f0632-aec6-49c9-b044-a168b9dffc81",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5193",
+					"path": [
+						"api",
+						"tasks",
+						"dc5f0632-aec6-49c9-b044-a168b9dffc81"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Task",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"taskId\": \"dc5f0632-aec6-49c9-b044-a168b9dffc81\",\n    \"title\": \"Sample Task Updated\",\n    \"description\": \"This is a sample task\",\n    \"dueDate\": \"2023-12-31T12:00:00\",\n    \"createdAt\": \"2023-12-24T01:30:42.993327\",\n    \"updatedAt\": \"2023-12-24T01:30:42.993327\",\n    \"TaskOwnerId\": \"dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4\",\n    \"isActive\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5193/api/tasks/dc5f0632-aec6-49c9-b044-a168b9dffc81",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5193",
+							"path": [
+								"api",
+								"tasks",
+								"dc5f0632-aec6-49c9-b044-a168b9dffc81"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 24 Dec 2023 21:15:39 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Delete Task",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5193/api/tasks/dc5f0632-aec6-49c9-b044-a168b9dffc81",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5193",
+					"path": [
+						"api",
+						"tasks",
+						"dc5f0632-aec6-49c9-b044-a168b9dffc81"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Task",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5193/api/tasks/dc5f0632-aec6-49c9-b044-a168b9dffc81",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5193",
+							"path": [
+								"api",
+								"tasks",
+								"dc5f0632-aec6-49c9-b044-a168b9dffc81"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Dec 2023 21:16:04 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "WWW-Authenticate",
+							"value": "Bearer"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Delete Task",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5193/api/tasks/dc5f0632-aec6-49c9-b044-a168b9dffc81",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5193",
+							"path": [
+								"api",
+								"tasks",
+								"dc5f0632-aec6-49c9-b044-a168b9dffc81"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 24 Dec 2023 21:17:03 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Add User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"UserId\": \"dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4\",\n    \"FirstName\": \"Mohamed\",\n    \"LastName\": \"Hamed\",\n    \"PhoneNumber\": \"123456789\",\n    \"Email\": \"mohamed@example.com\",\n    \"Username\": \"johndoe\",\n    \"Password\" : \"Password123\",\n    \"IsActive\": true,\n    \"CreatedAt\": \"2023-12-23T08:00:00\",\n    \"UpdatedAt\": \"2023-12-23T08:00:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5193/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5193",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add User",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"UserId\": \"dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b3\",\n    \"FirstName\": \"John\",\n    \"LastName\": \"Doe\",\n    \"PhoneNumber\": \"123456789\",\n    \"Email\": \"john.doe@example.com\",\n    \"Username\": \"johndoe\",\n    \"Password\" : \"Password123\",\n    \"IsActive\": true,\n    \"CreatedAt\": \"023-12-23T08:00:00\",\n    \"UpdatedAt\": \"2023-12-23T08:00:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5193/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5193",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"status": "Method Not Allowed",
+					"code": 405,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Dec 2023 00:22:11 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Allow",
+							"value": "GET"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Add User",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"UserId\": \"dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4\",\n    \"FirstName\": \"Mohamed\",\n    \"LastName\": \"Hamed\",\n    \"PhoneNumber\": \"123456789\",\n    \"Email\": \"mohamed@example.com\",\n    \"Username\": \"johndoe\",\n    \"Password\" : \"Password123\",\n    \"IsActive\": true,\n    \"CreatedAt\": \"2023-12-23T08:00:00\",\n    \"UpdatedAt\": \"2023-12-23T08:00:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5193/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5193",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Dec 2023 00:52:46 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Location",
+							"value": "https://localhost:7166/api/users"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"userId\": \"dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4\",\n    \"firstName\": \"Mohamed\",\n    \"lastName\": \"Hamed\",\n    \"phoneNumber\": \"123456789\",\n    \"email\": \"mohamed@example.com\",\n    \"username\": \"johndoe\",\n    \"password\": \"Password123\",\n    \"isActive\": true,\n    \"createdAt\": \"2023-12-23T08:00:00\",\n    \"updatedAt\": \"2023-12-23T08:00:00\"\n}"
+				},
+				{
+					"name": "Add User",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"UserId\": \"dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4\",\n    \"FirstName\": \"Mohamed\",\n    \"LastName\": \"Hamed\",\n    \"PhoneNumber\": \"123456789\",\n    \"Email\": \"mohamed@example.com\",\n    \"Username\": \"johndoe\",\n    \"Password\" : \"Password123\",\n    \"IsActive\": true,\n    \"CreatedAt\": \"2023-12-23T08:00:00\",\n    \"UpdatedAt\": \"2023-12-23T08:00:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5193/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5193",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Dec 2023 20:25:19 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Location",
+							"value": "https://localhost:7166/api/users"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"userId\": \"dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4\",\n    \"firstName\": \"Mohamed\",\n    \"lastName\": \"Hamed\",\n    \"phoneNumber\": \"123456789\",\n    \"email\": \"mohamed@example.com\",\n    \"username\": \"johndoe\",\n    \"password\": \"Password123\",\n    \"isActive\": true,\n    \"createdAt\": \"2023-12-23T08:00:00\",\n    \"updatedAt\": \"2023-12-23T08:00:00\"\n}"
+				},
+				{
+					"name": "Add User",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"UserId\": \"dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4\",\n    \"FirstName\": \"Mohamed\",\n    \"LastName\": \"Hamed\",\n    \"PhoneNumber\": \"123456789\",\n    \"Email\": \"mohamed@example.com\",\n    \"Username\": \"johndoe\",\n    \"Password\" : \"Password123\",\n    \"IsActive\": true,\n    \"CreatedAt\": \"2023-12-23T08:00:00\",\n    \"UpdatedAt\": \"2023-12-23T08:00:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5193/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5193",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Dec 2023 21:05:23 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Location",
+							"value": "https://localhost:7166/api/users"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"userId\": \"dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4\",\n    \"firstName\": \"Mohamed\",\n    \"lastName\": \"Hamed\",\n    \"phoneNumber\": \"123456789\",\n    \"email\": \"mohamed@example.com\",\n    \"username\": \"johndoe\",\n    \"password\": \"Password123\",\n    \"isActive\": true,\n    \"createdAt\": \"2023-12-23T08:00:00\",\n    \"updatedAt\": \"2023-12-23T08:00:00\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5193/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5193",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Users",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5193/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5193",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Dec 2023 00:52:57 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"userId\": \"dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4\",\n        \"firstName\": \"Mohamed\",\n        \"lastName\": \"Hamed\",\n        \"phoneNumber\": \"123456789\",\n        \"email\": \"mohamed@example.com\",\n        \"username\": \"johndoe\",\n        \"password\": \"Password123\",\n        \"isActive\": true,\n        \"createdAt\": \"2023-12-24T02:52:46.796021\",\n        \"updatedAt\": \"2023-12-24T02:52:46.796023\"\n    }\n]"
+				},
+				{
+					"name": "Get All Users",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5193/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5193",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Dec 2023 20:25:37 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"userId\": \"dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4\",\n        \"firstName\": \"Mohamed\",\n        \"lastName\": \"Hamed\",\n        \"phoneNumber\": \"123456789\",\n        \"email\": \"mohamed@example.com\",\n        \"username\": \"johndoe\",\n        \"password\": \"Password123\",\n        \"isActive\": true,\n        \"createdAt\": \"2023-12-24T22:25:20.533427\",\n        \"updatedAt\": \"2023-12-24T22:25:20.533427\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get User By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5193/api/users/dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5193",
+					"path": [
+						"api",
+						"users",
+						"dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get User By Id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5193/api/users/dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5193",
+							"path": [
+								"api",
+								"users",
+								"dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Dec 2023 00:53:33 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"userId\": \"dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4\",\n    \"firstName\": \"Mohamed\",\n    \"lastName\": \"Hamed\",\n    \"phoneNumber\": \"123456789\",\n    \"email\": \"mohamed@example.com\",\n    \"username\": \"johndoe\",\n    \"password\": \"Password123\",\n    \"isActive\": true,\n    \"createdAt\": \"2023-12-24T02:52:46.796021\",\n    \"updatedAt\": \"2023-12-24T02:52:46.796023\"\n}"
+				},
+				{
+					"name": "Get User By Id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5193/api/users/dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5193",
+							"path": [
+								"api",
+								"users",
+								"dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Dec 2023 20:28:59 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"userId\": \"dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4\",\n    \"firstName\": \"Mohamed\",\n    \"lastName\": \"Hamed\",\n    \"phoneNumber\": \"123456789\",\n    \"email\": \"mohamed@example.com\",\n    \"username\": \"johndoe\",\n    \"password\": \"Password123\",\n    \"isActive\": true,\n    \"createdAt\": \"2023-12-24T22:25:20.533427\",\n    \"updatedAt\": \"2023-12-24T22:25:20.533427\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYmI2M2RiYi01MWEzLTRkM2UtOTNhNC0yZThmMDRhOGQzYjQiLCJ1c2VySWQiOiJkYmI2M2RiYi01MWEzLTRkM2UtOTNhNC0yZThmMDRhOGQzYjQiLCJlbWFpbCI6Im1vaGFtZWRAZXhhbXBsZS5jb20iLCJwYXNzd29yZCI6IlBhc3N3b3JkMTIzIiwiZXhwIjoxNzAzNDUzMzc4LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MTEyIiwiYXVkIjoidGFza19tYW5hZ21lbnRfc3lzdGVtIn0.Rjd3kLvpSYVjPq3aAcRj4V6BMcykV1RwmWRjkafnYXo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": \"dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4\",\n    \"firstName\": \"Mohamed Updated\",\n    \"lastName\": \"Hamed\",\n    \"phoneNumber\": \"123456789\",\n    \"email\": \"mohamed@example.com\",\n    \"username\": \"johndoe\",\n    \"password\": \"Password123\",\n    \"isActive\": true,\n    \"createdAt\": \"2023-12-24T02:52:46.796021\",\n    \"updatedAt\": \"2023-12-24T02:52:46.796023\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5193/api/users/dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5193",
+					"path": [
+						"api",
+						"users",
+						"dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update User",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": \"dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4\",\n    \"firstName\": \"Mohamed Updated\",\n    \"lastName\": \"Hamed\",\n    \"phoneNumber\": \"123456789\",\n    \"email\": \"mohamed@example.com\",\n    \"username\": \"johndoe\",\n    \"password\": \"Password123\",\n    \"isActive\": true,\n    \"createdAt\": \"2023-12-24T02:52:46.796021\",\n    \"updatedAt\": \"2023-12-24T02:52:46.796023\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5193/api/users/dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5193",
+							"path": [
+								"api",
+								"users",
+								"dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 24 Dec 2023 20:31:18 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "User Authentication",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Email\":\"mohamed@example.com\",\n    \"Password\":\"Password123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5193/api/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5193",
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User Authentication",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Email\":\"mohamed@example.com\",\n    \"Password\":\"Password123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5193/api/users/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5193",
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 24 Dec 2023 01:26:24 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYmI2M2RiYi01MWEzLTRkM2UtOTNhNC0yZThmMDRhOGQzYjQiLCJ1c2VySWQiOiJkYmI2M2RiYi01MWEzLTRkM2UtOTNhNC0yZThmMDRhOGQzYjQiLCJlbWFpbCI6Im1vaGFtZWRAZXhhbXBsZS5jb20iLCJwYXNzd29yZCI6IlBhc3N3b3JkMTIzIiwiZXhwIjoxNzAzMzg0Nzg0LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MTEyIiwiYXVkIjoidGFza19tYW5hZ21lbnRfc3lzdGVtIn0.alEOgejVikuT_rZ47nlu8Usdm6X02TG9FAqBxuVUB70\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:5193/api/users/dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkYmI2M2RiYi01MWEzLTRkM2UtOTNhNC0yZThmMDRhOGQzYjQiLCJ1c2VySWQiOiJkYmI2M2RiYi01MWEzLTRkM2UtOTNhNC0yZThmMDRhOGQzYjQiLCJlbWFpbCI6Im1vaGFtZWRAZXhhbXBsZS5jb20iLCJwYXNzd29yZCI6IlBhc3N3b3JkMTIzIiwiZXhwIjoxNzAzNDUzMzc4LCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MTEyIiwiYXVkIjoidGFza19tYW5hZ21lbnRfc3lzdGVtIn0.Rjd3kLvpSYVjPq3aAcRj4V6BMcykV1RwmWRjkafnYXo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5193/api/users/dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5193",
+					"path": [
+						"api",
+						"users",
+						"dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:5193/api/users/dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5193/api/users/dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5193",
+							"path": [
+								"api",
+								"users",
+								"dbb63dbb-51a3-4d3e-93a4-2e8f04a8d3b4"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 24 Dec 2023 20:31:54 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
