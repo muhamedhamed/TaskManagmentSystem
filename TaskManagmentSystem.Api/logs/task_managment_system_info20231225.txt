@@ -1,0 +1,553 @@
+2023-12-25 14:57:09.513 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-12-25 14:57:09.564 +02:00 [DBG] Hosting starting
+2023-12-25 14:57:09.584 +02:00 [INF] User profile is available. Using '/Users/mohamedhamed/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-12-25 14:57:09.585 +02:00 [DBG] Reading data from file '/Users/mohamedhamed/.aspnet/DataProtection-Keys/key-88577373-9d6d-4947-9416-20d46326d4db.xml'.
+2023-12-25 14:57:09.590 +02:00 [DBG] Found key {88577373-9d6d-4947-9416-20d46326d4db}.
+2023-12-25 14:57:09.595 +02:00 [DBG] Considering key {88577373-9d6d-4947-9416-20d46326d4db} with expiration date 2024-03-20 21:21:12Z as default key.
+2023-12-25 14:57:09.596 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-12-25 14:57:09.599 +02:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2023-12-25 14:57:09.599 +02:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2023-12-25 14:57:09.602 +02:00 [DBG] Using key {88577373-9d6d-4947-9416-20d46326d4db} as the default key.
+2023-12-25 14:57:09.602 +02:00 [DBG] Key ring with default key {88577373-9d6d-4947-9416-20d46326d4db} was loaded during application startup.
+2023-12-25 14:57:09.675 +02:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 96B2898668BD7D1A42B838ABCF1EA7C4F34CC425)
+2023-12-25 14:57:09.684 +02:00 [INF] Now listening on: https://localhost:7166
+2023-12-25 14:57:09.684 +02:00 [INF] Now listening on: http://localhost:5193
+2023-12-25 14:57:09.684 +02:00 [DBG] Loaded hosting startup assembly TaskManagmentSystem.Api
+2023-12-25 14:57:09.684 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-25 14:57:09.685 +02:00 [INF] Hosting environment: Development
+2023-12-25 14:57:09.685 +02:00 [INF] Content root path: /Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Api/
+2023-12-25 14:57:09.685 +02:00 [DBG] Hosting started
+2023-12-25 14:57:16.293 +02:00 [DBG] Connection id "0HN05942O45HV" received FIN.
+2023-12-25 14:57:16.301 +02:00 [DBG] Connection id "0HN05942O45HV" accepted.
+2023-12-25 14:57:16.302 +02:00 [DBG] Connection id "0HN05942O45HV" started.
+2023-12-25 14:57:16.302 +02:00 [DBG] Connection id "0HN05942O45I0" accepted.
+2023-12-25 14:57:16.302 +02:00 [DBG] Connection id "0HN05942O45I0" started.
+2023-12-25 14:57:16.305 +02:00 [DBG] Connection id "0HN05942O45HV" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-25 14:57:16.309 +02:00 [DBG] Connection id "0HN05942O45HV" disconnecting.
+2023-12-25 14:57:16.310 +02:00 [DBG] Connection id "0HN05942O45HV" stopped.
+2023-12-25 14:57:16.324 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5193/api/tasks - -
+2023-12-25 14:57:16.326 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-12-25 14:57:16.348 +02:00 [DBG] The request path  does not match the path filter
+2023-12-25 14:57:16.351 +02:00 [DBG] Https port '7166' discovered from server endpoints.
+2023-12-25 14:57:16.352 +02:00 [DBG] Redirecting to 'https://localhost:7166/api/tasks'.
+2023-12-25 14:57:16.354 +02:00 [DBG] Connection id "0HN05942O45I0" completed keep alive response.
+2023-12-25 14:57:16.355 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5193/api/tasks - - - 307 0 - 33.2389ms
+2023-12-25 14:57:16.357 +02:00 [DBG] Connection id "0HN05942O45I1" accepted.
+2023-12-25 14:57:16.357 +02:00 [DBG] Connection id "0HN05942O45I2" accepted.
+2023-12-25 14:57:16.357 +02:00 [DBG] Connection id "0HN05942O45I1" started.
+2023-12-25 14:57:16.357 +02:00 [DBG] Connection id "0HN05942O45I1" received FIN.
+2023-12-25 14:57:16.357 +02:00 [DBG] Connection id "0HN05942O45I1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-25 14:57:16.357 +02:00 [DBG] Connection id "0HN05942O45I2" started.
+2023-12-25 14:57:16.358 +02:00 [DBG] Connection id "0HN05942O45I1" disconnecting.
+2023-12-25 14:57:16.359 +02:00 [DBG] Connection id "0HN05942O45I1" stopped.
+2023-12-25 14:57:16.404 +02:00 [DBG] Connection 0HN05942O45I2 established using the following protocol: "Tls12"
+2023-12-25 14:57:16.406 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7166/api/tasks - -
+2023-12-25 14:57:16.406 +02:00 [DBG] The request path  does not match the path filter
+2023-12-25 14:57:16.418 +02:00 [DBG] 1 candidate(s) found for the request path '/api/tasks'
+2023-12-25 14:57:16.420 +02:00 [DBG] Endpoint 'TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api)' with route pattern 'api/tasks' is valid for the request path '/api/tasks'
+2023-12-25 14:57:16.421 +02:00 [DBG] Request matched endpoint 'TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api)'
+2023-12-25 14:57:16.440 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-25 14:57:16.441 +02:00 [INF] Executing endpoint 'TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api)'
+2023-12-25 14:57:16.451 +02:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllTasks() on controller TaskManagmentSystem.Api.TaskController (TaskManagmentSystem.Api).
+2023-12-25 14:57:16.452 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-25 14:57:16.452 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-25 14:57:16.452 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-12-25 14:57:16.452 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-25 14:57:16.452 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-12-25 14:57:16.452 +02:00 [DBG] Executing controller factory for controller TaskManagmentSystem.Api.TaskController (TaskManagmentSystem.Api)
+2023-12-25 14:57:16.508 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-12-25 14:57:16.833 +02:00 [INF] Entity Framework Core 6.0.25 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: None
+2023-12-25 14:57:16.874 +02:00 [DBG] Executed controller factory for controller TaskManagmentSystem.Api.TaskController (TaskManagmentSystem.Api)
+2023-12-25 14:57:16.874 +02:00 [INF] Attempting to retrieve all tasks.
+2023-12-25 14:57:16.895 +02:00 [DBG] Compiling query expression: 
+'DbSet<TaskEntity>()'
+2023-12-25 14:57:16.961 +02:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<TaskEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: TaskEntity.TaskId (string) Required PK AfterSave:Throw ValueGenerated.OnAdd MaxLength(36) Ansi, 0], [Property: TaskEntity.CreatedAt (DateTime) Required, 1], [Property: TaskEntity.Description (string) Required MaxLength(255), 2], [Property: TaskEntity.DueDate (DateTime) Required, 3], [Property: TaskEntity.IsActive (bool) Required, 4], [Property: TaskEntity.TaskOwnerId (string) Required FK Index, 5], [Property: TaskEntity.Title (string) Required MaxLength(255), 6], [Property: TaskEntity.UpdatedAt (DateTime) Required, 7] }
+        SELECT t.TaskId, t.CreatedAt, t.Description, t.DueDate, t.IsActive, t.TaskOwnerId, t.Title, t.UpdatedAt
+        FROM Tasks AS t), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, TaskEntity>, 
+    TaskManagmentSystem.Infrastructure.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)'
+2023-12-25 14:57:16.975 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-12-25 14:57:16.989 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (13ms).
+2023-12-25 14:57:16.991 +02:00 [DBG] Opening connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-25 14:57:17.179 +02:00 [DBG] Opened connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-25 14:57:17.183 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[TaskId], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[IsActive], [t].[TaskOwnerId], [t].[Title], [t].[UpdatedAt]
+FROM [Tasks] AS [t]
+2023-12-25 14:57:17.227 +02:00 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[TaskId], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[IsActive], [t].[TaskOwnerId], [t].[Title], [t].[UpdatedAt]
+FROM [Tasks] AS [t]
+2023-12-25 14:57:17.231 +02:00 [DBG] A data reader was disposed.
+2023-12-25 14:57:17.232 +02:00 [DBG] Closing connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-25 14:57:17.234 +02:00 [DBG] Closed connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-25 14:57:17.242 +02:00 [WRN] No tasks found.
+2023-12-25 14:57:17.243 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-12-25 14:57:17.244 +02:00 [DBG] No information found on request to perform content negotiation.
+2023-12-25 14:57:17.244 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-12-25 14:57:17.244 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-12-25 14:57:17.244 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2023-12-25 14:57:17.244 +02:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2023-12-25 14:57:17.247 +02:00 [INF] Executed action TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api) in 792.6905ms
+2023-12-25 14:57:17.247 +02:00 [INF] Executed endpoint 'TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api)'
+2023-12-25 14:57:17.248 +02:00 [DBG] Connection id "0HN05942O45I2" completed keep alive response.
+2023-12-25 14:57:17.248 +02:00 [DBG] 'ApplicationDbContext' disposed.
+2023-12-25 14:57:17.249 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7166/api/tasks - - - 404 - text/plain;+charset=utf-8 843.2335ms
+2023-12-25 14:57:28.818 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5193/api/tasks application/json 328
+2023-12-25 14:57:28.823 +02:00 [DBG] POST requests are not supported
+2023-12-25 14:57:28.823 +02:00 [DBG] Redirecting to 'https://localhost:7166/api/tasks'.
+2023-12-25 14:57:28.824 +02:00 [DBG] Connection id "0HN05942O45I0" completed keep alive response.
+2023-12-25 14:57:28.824 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5193/api/tasks application/json 328 - 307 0 - 6.7430ms
+2023-12-25 14:57:28.824 +02:00 [DBG] Connection id "0HN05942O45I0", Request id "0HN05942O45I0:00000003": started reading request body.
+2023-12-25 14:57:28.824 +02:00 [DBG] Connection id "0HN05942O45I0", Request id "0HN05942O45I0:00000003": done reading request body.
+2023-12-25 14:57:28.827 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7166/api/tasks application/json 328
+2023-12-25 14:57:28.827 +02:00 [DBG] POST requests are not supported
+2023-12-25 14:57:28.829 +02:00 [DBG] 1 candidate(s) found for the request path '/api/tasks'
+2023-12-25 14:57:28.829 +02:00 [DBG] Endpoint 'TaskManagmentSystem.Api.TaskController.AddTask (TaskManagmentSystem.Api)' with route pattern 'api/tasks' is valid for the request path '/api/tasks'
+2023-12-25 14:57:28.830 +02:00 [DBG] Request matched endpoint 'TaskManagmentSystem.Api.TaskController.AddTask (TaskManagmentSystem.Api)'
+2023-12-25 14:57:28.869 +02:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '12/24/2023 9:29:38PM', Current time (UTC): '12/25/2023 12:57:28PM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateJWS(String token, TokenValidationParameters validationParameters, BaseConfiguration currentConfiguration, SecurityToken& signatureValidatedToken, ExceptionDispatchInfo& exceptionThrown)
+--- End of stack trace from previous location ---
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, JwtSecurityToken outerToken, TokenValidationParameters validationParameters, SecurityToken& signatureValidatedToken)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2023-12-25 14:57:28.880 +02:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '12/24/2023 9:29:38PM', Current time (UTC): '12/25/2023 12:57:28PM'.
+2023-12-25 14:57:28.882 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-12-25 14:57:28.885 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-12-25 14:57:28.886 +02:00 [DBG] Connection id "0HN05942O45I2" completed keep alive response.
+2023-12-25 14:57:28.886 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7166/api/tasks application/json 328 - 401 0 - 58.8262ms
+2023-12-25 14:57:28.886 +02:00 [DBG] Connection id "0HN05942O45I2", Request id "0HN05942O45I2:00000003": started reading request body.
+2023-12-25 14:57:28.886 +02:00 [DBG] Connection id "0HN05942O45I2", Request id "0HN05942O45I2:00000003": done reading request body.
+2023-12-25 14:57:39.972 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5193/api/users/login application/json 67
+2023-12-25 14:57:39.972 +02:00 [DBG] The request path  does not match the path filter
+2023-12-25 14:57:39.973 +02:00 [DBG] Redirecting to 'https://localhost:7166/api/users/login'.
+2023-12-25 14:57:39.973 +02:00 [DBG] Connection id "0HN05942O45I0" completed keep alive response.
+2023-12-25 14:57:39.973 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5193/api/users/login application/json 67 - 307 0 - 0.7022ms
+2023-12-25 14:57:39.973 +02:00 [DBG] Connection id "0HN05942O45I0", Request id "0HN05942O45I0:00000004": started reading request body.
+2023-12-25 14:57:39.973 +02:00 [DBG] Connection id "0HN05942O45I0", Request id "0HN05942O45I0:00000004": done reading request body.
+2023-12-25 14:57:39.974 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7166/api/users/login application/json 67
+2023-12-25 14:57:39.974 +02:00 [DBG] The request path  does not match the path filter
+2023-12-25 14:57:39.974 +02:00 [DBG] 2 candidate(s) found for the request path '/api/users/login'
+2023-12-25 14:57:39.974 +02:00 [DBG] Endpoint 'TaskManagmentSystem.Api.Controllers.UserController.Login (TaskManagmentSystem.Api)' with route pattern 'api/users/login' is valid for the request path '/api/users/login'
+2023-12-25 14:57:39.975 +02:00 [DBG] Endpoint 'TaskManagmentSystem.Api.Controllers.UserController.GetUserById (TaskManagmentSystem.Api)' with route pattern 'api/users/{userId}' is valid for the request path '/api/users/login'
+2023-12-25 14:57:39.975 +02:00 [DBG] Request matched endpoint 'TaskManagmentSystem.Api.Controllers.UserController.Login (TaskManagmentSystem.Api)'
+2023-12-25 14:57:39.981 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-25 14:57:39.982 +02:00 [INF] Executing endpoint 'TaskManagmentSystem.Api.Controllers.UserController.Login (TaskManagmentSystem.Api)'
+2023-12-25 14:57:39.994 +02:00 [INF] Route matched with {action = "Login", controller = "User"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(TaskManagmentSystem.Application.Dtos.UserLoginDto) on controller TaskManagmentSystem.Api.Controllers.UserController (TaskManagmentSystem.Api).
+2023-12-25 14:57:39.994 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-25 14:57:39.994 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-25 14:57:39.995 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-12-25 14:57:39.995 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-25 14:57:39.995 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-12-25 14:57:39.995 +02:00 [DBG] Executing controller factory for controller TaskManagmentSystem.Api.Controllers.UserController (TaskManagmentSystem.Api)
+2023-12-25 14:57:40.014 +02:00 [INF] Entity Framework Core 6.0.25 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: None
+2023-12-25 14:57:40.014 +02:00 [DBG] Executed controller factory for controller TaskManagmentSystem.Api.Controllers.UserController (TaskManagmentSystem.Api)
+2023-12-25 14:57:40.016 +02:00 [DBG] Attempting to bind parameter 'userLoginDto' of type 'TaskManagmentSystem.Application.Dtos.UserLoginDto' ...
+2023-12-25 14:57:40.017 +02:00 [DBG] Attempting to bind parameter 'userLoginDto' of type 'TaskManagmentSystem.Application.Dtos.UserLoginDto' using the name '' in request data ...
+2023-12-25 14:57:40.017 +02:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-12-25 14:57:40.050 +02:00 [DBG] Connection id "0HN05942O45I2", Request id "0HN05942O45I2:00000004": started reading request body.
+2023-12-25 14:57:40.050 +02:00 [DBG] Connection id "0HN05942O45I2", Request id "0HN05942O45I2:00000004": done reading request body.
+2023-12-25 14:57:40.059 +02:00 [DBG] JSON input formatter succeeded, deserializing to type 'TaskManagmentSystem.Application.Dtos.UserLoginDto'
+2023-12-25 14:57:40.059 +02:00 [DBG] Done attempting to bind parameter 'userLoginDto' of type 'TaskManagmentSystem.Application.Dtos.UserLoginDto'.
+2023-12-25 14:57:40.059 +02:00 [DBG] Done attempting to bind parameter 'userLoginDto' of type 'TaskManagmentSystem.Application.Dtos.UserLoginDto'.
+2023-12-25 14:57:40.059 +02:00 [DBG] Attempting to validate the bound parameter 'userLoginDto' of type 'TaskManagmentSystem.Application.Dtos.UserLoginDto' ...
+2023-12-25 14:57:40.062 +02:00 [DBG] Done attempting to validate the bound parameter 'userLoginDto' of type 'TaskManagmentSystem.Application.Dtos.UserLoginDto'.
+2023-12-25 14:57:40.063 +02:00 [INF] Attempting to login user with email: mohamed@example.com
+2023-12-25 14:57:40.070 +02:00 [DBG] Compiling query expression: 
+'DbSet<User>()
+    .FirstOrDefault(u => u.Email == __email_0 && u.Password == __password_1)'
+2023-12-25 14:57:40.099 +02:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<User>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: User.UserId (string) Required PK AfterSave:Throw ValueGenerated.OnAdd MaxLength(36) Ansi, 0], [Property: User.CreatedAt (DateTime) Required, 1], [Property: User.Email (string) Required Index MaxLength(255), 2], [Property: User.FirstName (string) Required, 3], [Property: User.IsActive (bool) Required, 4], [Property: User.LastName (string) Required, 5], [Property: User.Password (string) Required, 6], [Property: User.PhoneNumber (string) Required, 7], [Property: User.UpdatedAt (DateTime) Required, 8], [Property: User.Username (string) Required Index MaxLength(255), 9] }
+        SELECT TOP(1) u.UserId, u.CreatedAt, u.Email, u.FirstName, u.IsActive, u.LastName, u.Password, u.PhoneNumber, u.UpdatedAt, u.Username
+        FROM Users AS u
+        WHERE (u.Email == @__email_0) && (u.Password == @__password_1)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, User>, 
+    TaskManagmentSystem.Infrastructure.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)
+    .SingleOrDefault()'
+2023-12-25 14:57:40.102 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-12-25 14:57:40.102 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-12-25 14:57:40.103 +02:00 [DBG] Opening connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-25 14:57:40.104 +02:00 [DBG] Opened connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-25 14:57:40.105 +02:00 [DBG] Executing DbCommand [Parameters=[@__email_0='?' (Size = 255), @__password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[Password], [u].[PhoneNumber], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Email] = @__email_0) AND ([u].[Password] = @__password_1)
+2023-12-25 14:57:40.159 +02:00 [INF] Executed DbCommand (55ms) [Parameters=[@__email_0='?' (Size = 255), @__password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[CreatedAt], [u].[Email], [u].[FirstName], [u].[IsActive], [u].[LastName], [u].[Password], [u].[PhoneNumber], [u].[UpdatedAt], [u].[Username]
+FROM [Users] AS [u]
+WHERE ([u].[Email] = @__email_0) AND ([u].[Password] = @__password_1)
+2023-12-25 14:57:40.174 +02:00 [DBG] Context 'ApplicationDbContext' started tracking 'User' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-25 14:57:40.189 +02:00 [DBG] A data reader was disposed.
+2023-12-25 14:57:40.189 +02:00 [DBG] Closing connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-25 14:57:40.189 +02:00 [DBG] Closed connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-25 14:57:40.197 +02:00 [INF] Successfully retrieved user with email: mohamed@example.com
+2023-12-25 14:57:40.198 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-12-25 14:57:40.198 +02:00 [DBG] No information found on request to perform content negotiation.
+2023-12-25 14:57:40.198 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-12-25 14:57:40.198 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-12-25 14:57:40.198 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-12-25 14:57:40.198 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-12-25 14:57:40.208 +02:00 [INF] Executed action TaskManagmentSystem.Api.Controllers.UserController.Login (TaskManagmentSystem.Api) in 213.1355ms
+2023-12-25 14:57:40.208 +02:00 [INF] Executed endpoint 'TaskManagmentSystem.Api.Controllers.UserController.Login (TaskManagmentSystem.Api)'
+2023-12-25 14:57:40.208 +02:00 [DBG] Connection id "0HN05942O45I2" completed keep alive response.
+2023-12-25 14:57:40.208 +02:00 [DBG] 'ApplicationDbContext' disposed.
+2023-12-25 14:57:40.208 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7166/api/users/login application/json 67 - 200 - application/json;+charset=utf-8 234.4186ms
+2023-12-25 14:57:54.228 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5193/api/tasks application/json 328
+2023-12-25 14:57:54.231 +02:00 [DBG] POST requests are not supported
+2023-12-25 14:57:54.231 +02:00 [DBG] Redirecting to 'https://localhost:7166/api/tasks'.
+2023-12-25 14:57:54.232 +02:00 [DBG] Connection id "0HN05942O45I0" completed keep alive response.
+2023-12-25 14:57:54.232 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5193/api/tasks application/json 328 - 307 0 - 3.5565ms
+2023-12-25 14:57:54.232 +02:00 [DBG] Connection id "0HN05942O45I0", Request id "0HN05942O45I0:00000005": started reading request body.
+2023-12-25 14:57:54.232 +02:00 [DBG] Connection id "0HN05942O45I0", Request id "0HN05942O45I0:00000005": done reading request body.
+2023-12-25 14:57:54.241 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:7166/api/tasks application/json 328
+2023-12-25 14:57:54.241 +02:00 [DBG] POST requests are not supported
+2023-12-25 14:57:54.241 +02:00 [DBG] 1 candidate(s) found for the request path '/api/tasks'
+2023-12-25 14:57:54.242 +02:00 [DBG] Endpoint 'TaskManagmentSystem.Api.TaskController.AddTask (TaskManagmentSystem.Api)' with route pattern 'api/tasks' is valid for the request path '/api/tasks'
+2023-12-25 14:57:54.242 +02:00 [DBG] Request matched endpoint 'TaskManagmentSystem.Api.TaskController.AddTask (TaskManagmentSystem.Api)'
+2023-12-25 14:57:54.248 +02:00 [DBG] Successfully validated the token.
+2023-12-25 14:57:54.248 +02:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2023-12-25 14:57:54.249 +02:00 [DBG] Authorization was successful.
+2023-12-25 14:57:54.249 +02:00 [INF] Executing endpoint 'TaskManagmentSystem.Api.TaskController.AddTask (TaskManagmentSystem.Api)'
+2023-12-25 14:57:54.249 +02:00 [INF] Route matched with {action = "AddTask", controller = "Task"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddTask(TaskManagmentSystem.Application.Dtos.TaskDto) on controller TaskManagmentSystem.Api.TaskController (TaskManagmentSystem.Api).
+2023-12-25 14:57:54.250 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-25 14:57:54.250 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-25 14:57:54.250 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-12-25 14:57:54.250 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-25 14:57:54.250 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-12-25 14:57:54.251 +02:00 [DBG] Executing controller factory for controller TaskManagmentSystem.Api.TaskController (TaskManagmentSystem.Api)
+2023-12-25 14:57:54.260 +02:00 [INF] Entity Framework Core 6.0.25 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: None
+2023-12-25 14:57:54.261 +02:00 [DBG] Executed controller factory for controller TaskManagmentSystem.Api.TaskController (TaskManagmentSystem.Api)
+2023-12-25 14:57:54.261 +02:00 [DBG] Attempting to bind parameter 'taskDto' of type 'TaskManagmentSystem.Application.Dtos.TaskDto' ...
+2023-12-25 14:57:54.261 +02:00 [DBG] Attempting to bind parameter 'taskDto' of type 'TaskManagmentSystem.Application.Dtos.TaskDto' using the name '' in request data ...
+2023-12-25 14:57:54.261 +02:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2023-12-25 14:57:54.268 +02:00 [DBG] Connection id "0HN05942O45I2", Request id "0HN05942O45I2:00000005": started reading request body.
+2023-12-25 14:57:54.268 +02:00 [DBG] Connection id "0HN05942O45I2", Request id "0HN05942O45I2:00000005": done reading request body.
+2023-12-25 14:57:54.271 +02:00 [DBG] JSON input formatter succeeded, deserializing to type 'TaskManagmentSystem.Application.Dtos.TaskDto'
+2023-12-25 14:57:54.271 +02:00 [DBG] Done attempting to bind parameter 'taskDto' of type 'TaskManagmentSystem.Application.Dtos.TaskDto'.
+2023-12-25 14:57:54.271 +02:00 [DBG] Done attempting to bind parameter 'taskDto' of type 'TaskManagmentSystem.Application.Dtos.TaskDto'.
+2023-12-25 14:57:54.271 +02:00 [DBG] Attempting to validate the bound parameter 'taskDto' of type 'TaskManagmentSystem.Application.Dtos.TaskDto' ...
+2023-12-25 14:57:54.273 +02:00 [DBG] Done attempting to validate the bound parameter 'taskDto' of type 'TaskManagmentSystem.Application.Dtos.TaskDto'.
+2023-12-25 14:57:54.273 +02:00 [INF] Attempting to create a new task with title: Sample Task
+2023-12-25 14:57:54.289 +02:00 [DBG] Context 'ApplicationDbContext' started tracking 'TaskEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-25 14:57:54.290 +02:00 [DBG] SaveChanges starting for 'ApplicationDbContext'.
+2023-12-25 14:57:54.292 +02:00 [DBG] DetectChanges starting for 'ApplicationDbContext'.
+2023-12-25 14:57:54.297 +02:00 [DBG] DetectChanges completed for 'ApplicationDbContext'.
+2023-12-25 14:57:54.301 +02:00 [DBG] Opening connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-25 14:57:54.302 +02:00 [DBG] Opened connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-25 14:57:54.302 +02:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2023-12-25 14:57:54.308 +02:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2023-12-25 14:57:54.336 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-12-25 14:57:54.336 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-12-25 14:57:54.336 +02:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 36) (DbType = AnsiString), @p1='?' (DbType = DateTime2), @p2='?' (Size = 255), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Boolean), @p5='?' (Size = 36) (DbType = AnsiString), @p6='?' (Size = 255), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Tasks] ([TaskId], [CreatedAt], [Description], [DueDate], [IsActive], [TaskOwnerId], [Title], [UpdatedAt])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2023-12-25 14:57:54.382 +02:00 [INF] Executed DbCommand (46ms) [Parameters=[@p0='?' (Size = 36) (DbType = AnsiString), @p1='?' (DbType = DateTime2), @p2='?' (Size = 255), @p3='?' (DbType = DateTime2), @p4='?' (DbType = Boolean), @p5='?' (Size = 36) (DbType = AnsiString), @p6='?' (Size = 255), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Tasks] ([TaskId], [CreatedAt], [Description], [DueDate], [IsActive], [TaskOwnerId], [Title], [UpdatedAt])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2023-12-25 14:57:54.382 +02:00 [DBG] A data reader was disposed.
+2023-12-25 14:57:54.383 +02:00 [DBG] Committing transaction.
+2023-12-25 14:57:54.387 +02:00 [DBG] Committed transaction.
+2023-12-25 14:57:54.387 +02:00 [DBG] Closing connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-25 14:57:54.387 +02:00 [DBG] Closed connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-25 14:57:54.388 +02:00 [DBG] Disposing transaction.
+2023-12-25 14:57:54.393 +02:00 [DBG] An entity of type 'TaskEntity' tracked by 'ApplicationDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-25 14:57:54.394 +02:00 [DBG] SaveChanges completed for 'ApplicationDbContext' with 1 entities written to the database.
+2023-12-25 14:57:54.394 +02:00 [INF] Successfully created a new task with ID: dc5f0632-aec6-49c9-b044-a168b9dffc81
+2023-12-25 14:57:54.394 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-12-25 14:57:54.394 +02:00 [DBG] No information found on request to perform content negotiation.
+2023-12-25 14:57:54.394 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-12-25 14:57:54.394 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-12-25 14:57:54.394 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-12-25 14:57:54.394 +02:00 [INF] Executing CreatedAtActionResult, writing value of type 'TaskManagmentSystem.Application.Dtos.TaskDto'.
+2023-12-25 14:57:54.402 +02:00 [DBG] Found the endpoints ["TaskManagmentSystem.Api.TaskController.AddTask (TaskManagmentSystem.Api)"] for address Microsoft.AspNetCore.Routing.RouteValuesAddress
+2023-12-25 14:57:54.404 +02:00 [DBG] Successfully processed template api/tasks for TaskManagmentSystem.Api.TaskController.AddTask (TaskManagmentSystem.Api) resulting in /api/tasks and 
+2023-12-25 14:57:54.404 +02:00 [DBG] Link generation succeeded for endpoints ["TaskManagmentSystem.Api.TaskController.AddTask (TaskManagmentSystem.Api)"] with result /api/tasks
+2023-12-25 14:57:54.407 +02:00 [INF] Executed action TaskManagmentSystem.Api.TaskController.AddTask (TaskManagmentSystem.Api) in 156.0336ms
+2023-12-25 14:57:54.407 +02:00 [INF] Executed endpoint 'TaskManagmentSystem.Api.TaskController.AddTask (TaskManagmentSystem.Api)'
+2023-12-25 14:57:54.407 +02:00 [DBG] Connection id "0HN05942O45I2" completed keep alive response.
+2023-12-25 14:57:54.407 +02:00 [DBG] 'ApplicationDbContext' disposed.
+2023-12-25 14:57:54.407 +02:00 [INF] Request finished HTTP/1.1 POST https://localhost:7166/api/tasks application/json 328 - 201 - application/json;+charset=utf-8 166.1657ms
+2023-12-25 14:58:00.690 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5193/api/tasks - -
+2023-12-25 14:58:00.692 +02:00 [DBG] The request path  does not match the path filter
+2023-12-25 14:58:00.693 +02:00 [DBG] Redirecting to 'https://localhost:7166/api/tasks'.
+2023-12-25 14:58:00.693 +02:00 [DBG] Connection id "0HN05942O45I0" completed keep alive response.
+2023-12-25 14:58:00.693 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5193/api/tasks - - - 307 0 - 3.7768ms
+2023-12-25 14:58:00.694 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7166/api/tasks - -
+2023-12-25 14:58:00.695 +02:00 [DBG] The request path  does not match the path filter
+2023-12-25 14:58:00.695 +02:00 [DBG] 1 candidate(s) found for the request path '/api/tasks'
+2023-12-25 14:58:00.696 +02:00 [DBG] Endpoint 'TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api)' with route pattern 'api/tasks' is valid for the request path '/api/tasks'
+2023-12-25 14:58:00.702 +02:00 [DBG] Request matched endpoint 'TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api)'
+2023-12-25 14:58:00.702 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-25 14:58:00.702 +02:00 [INF] Executing endpoint 'TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api)'
+2023-12-25 14:58:00.703 +02:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllTasks() on controller TaskManagmentSystem.Api.TaskController (TaskManagmentSystem.Api).
+2023-12-25 14:58:00.703 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-25 14:58:00.704 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-25 14:58:00.704 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-12-25 14:58:00.704 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-25 14:58:00.705 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-12-25 14:58:00.705 +02:00 [DBG] Executing controller factory for controller TaskManagmentSystem.Api.TaskController (TaskManagmentSystem.Api)
+2023-12-25 14:58:00.716 +02:00 [INF] Entity Framework Core 6.0.25 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: None
+2023-12-25 14:58:00.717 +02:00 [DBG] Executed controller factory for controller TaskManagmentSystem.Api.TaskController (TaskManagmentSystem.Api)
+2023-12-25 14:58:00.717 +02:00 [INF] Attempting to retrieve all tasks.
+2023-12-25 14:58:00.718 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-12-25 14:58:00.718 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2023-12-25 14:58:00.718 +02:00 [DBG] Opening connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-25 14:58:00.718 +02:00 [DBG] Opened connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-25 14:58:00.718 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[TaskId], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[IsActive], [t].[TaskOwnerId], [t].[Title], [t].[UpdatedAt]
+FROM [Tasks] AS [t]
+2023-12-25 14:58:00.721 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[TaskId], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[IsActive], [t].[TaskOwnerId], [t].[Title], [t].[UpdatedAt]
+FROM [Tasks] AS [t]
+2023-12-25 14:58:00.721 +02:00 [DBG] Context 'ApplicationDbContext' started tracking 'TaskEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-25 14:58:00.721 +02:00 [DBG] A data reader was disposed.
+2023-12-25 14:58:00.721 +02:00 [DBG] Closing connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-25 14:58:00.721 +02:00 [DBG] Closed connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-25 14:58:00.721 +02:00 [INF] Successfully retrieved all tasks.
+2023-12-25 14:58:00.721 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-12-25 14:58:00.721 +02:00 [DBG] No information found on request to perform content negotiation.
+2023-12-25 14:58:00.721 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-12-25 14:58:00.721 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-12-25 14:58:00.721 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-12-25 14:58:00.722 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagmentSystem.Application.Dtos.TaskDto, TaskManagmentSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-25 14:58:00.726 +02:00 [INF] Executed action TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api) in 20.8447ms
+2023-12-25 14:58:00.726 +02:00 [INF] Executed endpoint 'TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api)'
+2023-12-25 14:58:00.726 +02:00 [DBG] Connection id "0HN05942O45I2" completed keep alive response.
+2023-12-25 14:58:00.726 +02:00 [DBG] 'ApplicationDbContext' disposed.
+2023-12-25 14:58:00.726 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7166/api/tasks - - - 200 - application/json;+charset=utf-8 31.6032ms
+2023-12-25 15:00:11.836 +02:00 [DBG] Connection id "0HN05942O45I0" disconnecting.
+2023-12-25 15:00:11.837 +02:00 [DBG] Connection id "0HN05942O45I0" stopped.
+2023-12-25 15:00:11.838 +02:00 [DBG] Connection id "0HN05942O45I2" disconnecting.
+2023-12-25 15:00:11.843 +02:00 [DBG] Connection id "0HN05942O45I0" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-25 15:00:11.845 +02:00 [DBG] Connection id "0HN05942O45I2" stopped.
+2023-12-25 15:00:11.845 +02:00 [DBG] Connection id "0HN05942O45I2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-25 15:40:02.429 +02:00 [DBG] Connection id "0HN05942O45I3" received FIN.
+2023-12-25 15:40:02.429 +02:00 [DBG] Connection id "0HN05942O45I3" accepted.
+2023-12-25 15:40:02.429 +02:00 [DBG] Connection id "0HN05942O45I3" started.
+2023-12-25 15:40:02.429 +02:00 [DBG] Connection id "0HN05942O45I4" accepted.
+2023-12-25 15:40:02.429 +02:00 [DBG] Connection id "0HN05942O45I4" started.
+2023-12-25 15:40:02.429 +02:00 [DBG] Connection id "0HN05942O45I3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-25 15:40:02.429 +02:00 [DBG] Connection id "0HN05942O45I3" disconnecting.
+2023-12-25 15:40:02.429 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5193/api/tasks - -
+2023-12-25 15:40:02.429 +02:00 [DBG] Connection id "0HN05942O45I3" stopped.
+2023-12-25 15:40:02.429 +02:00 [DBG] The request path  does not match the path filter
+2023-12-25 15:40:02.429 +02:00 [DBG] Redirecting to 'https://localhost:7166/api/tasks'.
+2023-12-25 15:40:02.429 +02:00 [DBG] Connection id "0HN05942O45I4" completed keep alive response.
+2023-12-25 15:40:02.429 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5193/api/tasks - - - 307 0 - 0.2638ms
+2023-12-25 15:40:02.431 +02:00 [DBG] Connection id "0HN05942O45I5" accepted.
+2023-12-25 15:40:02.431 +02:00 [DBG] Connection id "0HN05942O45I5" received FIN.
+2023-12-25 15:40:02.431 +02:00 [DBG] Connection id "0HN05942O45I6" accepted.
+2023-12-25 15:40:02.431 +02:00 [DBG] Connection id "0HN05942O45I5" started.
+2023-12-25 15:40:02.431 +02:00 [DBG] Connection id "0HN05942O45I5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-25 15:40:02.431 +02:00 [DBG] Connection id "0HN05942O45I6" started.
+2023-12-25 15:40:02.431 +02:00 [DBG] Connection id "0HN05942O45I5" disconnecting.
+2023-12-25 15:40:02.432 +02:00 [DBG] Connection id "0HN05942O45I5" stopped.
+2023-12-25 15:40:02.466 +02:00 [DBG] Connection 0HN05942O45I6 established using the following protocol: "Tls12"
+2023-12-25 15:40:02.466 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7166/api/tasks - -
+2023-12-25 15:40:02.466 +02:00 [DBG] The request path  does not match the path filter
+2023-12-25 15:40:02.467 +02:00 [DBG] 1 candidate(s) found for the request path '/api/tasks'
+2023-12-25 15:40:02.467 +02:00 [DBG] Endpoint 'TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api)' with route pattern 'api/tasks' is valid for the request path '/api/tasks'
+2023-12-25 15:40:02.467 +02:00 [DBG] Request matched endpoint 'TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api)'
+2023-12-25 15:40:02.467 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-25 15:40:02.467 +02:00 [INF] Executing endpoint 'TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api)'
+2023-12-25 15:40:02.468 +02:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllTasks() on controller TaskManagmentSystem.Api.TaskController (TaskManagmentSystem.Api).
+2023-12-25 15:40:02.468 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-25 15:40:02.469 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-25 15:40:02.469 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-12-25 15:40:02.469 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-25 15:40:02.469 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-12-25 15:40:02.469 +02:00 [DBG] Executing controller factory for controller TaskManagmentSystem.Api.TaskController (TaskManagmentSystem.Api)
+2023-12-25 15:40:02.471 +02:00 [INF] Entity Framework Core 6.0.25 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: None
+2023-12-25 15:40:02.472 +02:00 [DBG] Executed controller factory for controller TaskManagmentSystem.Api.TaskController (TaskManagmentSystem.Api)
+2023-12-25 15:40:02.472 +02:00 [INF] Attempting to retrieve all tasks.
+2023-12-25 15:40:02.472 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-12-25 15:40:02.474 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2023-12-25 15:40:02.474 +02:00 [DBG] Opening connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-25 15:40:02.499 +02:00 [DBG] Opened connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-25 15:40:02.500 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[TaskId], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[IsActive], [t].[TaskOwnerId], [t].[Title], [t].[UpdatedAt]
+FROM [Tasks] AS [t]
+2023-12-25 15:40:02.501 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[TaskId], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[IsActive], [t].[TaskOwnerId], [t].[Title], [t].[UpdatedAt]
+FROM [Tasks] AS [t]
+2023-12-25 15:40:02.501 +02:00 [DBG] Context 'ApplicationDbContext' started tracking 'TaskEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-25 15:40:02.501 +02:00 [DBG] A data reader was disposed.
+2023-12-25 15:40:02.501 +02:00 [DBG] Closing connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-25 15:40:02.502 +02:00 [DBG] Closed connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-25 15:40:02.502 +02:00 [INF] Successfully retrieved all tasks.
+2023-12-25 15:40:02.502 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-12-25 15:40:02.502 +02:00 [DBG] No information found on request to perform content negotiation.
+2023-12-25 15:40:02.502 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-12-25 15:40:02.502 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-12-25 15:40:02.502 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-12-25 15:40:02.502 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagmentSystem.Application.Dtos.TaskDto, TaskManagmentSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-25 15:40:02.502 +02:00 [INF] Executed action TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api) in 33.15ms
+2023-12-25 15:40:02.503 +02:00 [INF] Executed endpoint 'TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api)'
+2023-12-25 15:40:02.503 +02:00 [DBG] Connection id "0HN05942O45I6" completed keep alive response.
+2023-12-25 15:40:02.503 +02:00 [DBG] 'ApplicationDbContext' disposed.
+2023-12-25 15:40:02.503 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7166/api/tasks - - - 200 - application/json;+charset=utf-8 36.6285ms
+2023-12-25 15:42:13.479 +02:00 [DBG] Connection id "0HN05942O45I4" disconnecting.
+2023-12-25 15:42:13.480 +02:00 [DBG] Connection id "0HN05942O45I4" stopped.
+2023-12-25 15:42:13.480 +02:00 [DBG] Connection id "0HN05942O45I4" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-25 15:42:13.480 +02:00 [DBG] Connection id "0HN05942O45I6" disconnecting.
+2023-12-25 15:42:13.482 +02:00 [DBG] Connection id "0HN05942O45I6" stopped.
+2023-12-25 15:42:13.486 +02:00 [DBG] Connection id "0HN05942O45I6" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-25 16:08:17.585 +02:00 [INF] Application is shutting down...
+2023-12-25 16:08:17.586 +02:00 [DBG] Hosting stopping
+2023-12-25 16:08:17.593 +02:00 [DBG] Hosting stopped
+2023-12-25 16:10:24.442 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-12-25 16:10:24.489 +02:00 [DBG] Hosting starting
+2023-12-25 16:10:24.495 +02:00 [INF] User profile is available. Using '/Users/mohamedhamed/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-12-25 16:10:24.496 +02:00 [DBG] Reading data from file '/Users/mohamedhamed/.aspnet/DataProtection-Keys/key-88577373-9d6d-4947-9416-20d46326d4db.xml'.
+2023-12-25 16:10:24.500 +02:00 [DBG] Found key {88577373-9d6d-4947-9416-20d46326d4db}.
+2023-12-25 16:10:24.505 +02:00 [DBG] Considering key {88577373-9d6d-4947-9416-20d46326d4db} with expiration date 2024-03-20 21:21:12Z as default key.
+2023-12-25 16:10:24.506 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-12-25 16:10:24.507 +02:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2023-12-25 16:10:24.507 +02:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2023-12-25 16:10:24.509 +02:00 [DBG] Using key {88577373-9d6d-4947-9416-20d46326d4db} as the default key.
+2023-12-25 16:10:24.509 +02:00 [DBG] Key ring with default key {88577373-9d6d-4947-9416-20d46326d4db} was loaded during application startup.
+2023-12-25 16:10:24.578 +02:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 96B2898668BD7D1A42B838ABCF1EA7C4F34CC425)
+2023-12-25 16:10:24.587 +02:00 [INF] Now listening on: https://localhost:7166
+2023-12-25 16:10:24.587 +02:00 [INF] Now listening on: http://localhost:5193
+2023-12-25 16:10:24.587 +02:00 [DBG] Loaded hosting startup assembly TaskManagmentSystem.Api
+2023-12-25 16:10:24.587 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-25 16:10:24.587 +02:00 [INF] Hosting environment: Development
+2023-12-25 16:10:24.587 +02:00 [INF] Content root path: /Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Api/
+2023-12-25 16:10:24.587 +02:00 [DBG] Hosting started
+2023-12-25 16:10:26.858 +02:00 [DBG] Connection id "0HN05ACV7QBMP" received FIN.
+2023-12-25 16:10:26.863 +02:00 [DBG] Connection id "0HN05ACV7QBMP" accepted.
+2023-12-25 16:10:26.864 +02:00 [DBG] Connection id "0HN05ACV7QBMP" started.
+2023-12-25 16:10:26.864 +02:00 [DBG] Connection id "0HN05ACV7QBMQ" accepted.
+2023-12-25 16:10:26.864 +02:00 [DBG] Connection id "0HN05ACV7QBMQ" started.
+2023-12-25 16:10:26.867 +02:00 [DBG] Connection id "0HN05ACV7QBMP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-25 16:10:26.871 +02:00 [DBG] Connection id "0HN05ACV7QBMP" disconnecting.
+2023-12-25 16:10:26.871 +02:00 [DBG] Connection id "0HN05ACV7QBMP" stopped.
+2023-12-25 16:10:26.885 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5193/api/tasks - -
+2023-12-25 16:10:26.888 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-12-25 16:10:26.907 +02:00 [DBG] The request path  does not match the path filter
+2023-12-25 16:10:26.910 +02:00 [DBG] Https port '7166' discovered from server endpoints.
+2023-12-25 16:10:26.910 +02:00 [DBG] Redirecting to 'https://localhost:7166/api/tasks'.
+2023-12-25 16:10:26.911 +02:00 [DBG] Connection id "0HN05ACV7QBMQ" completed keep alive response.
+2023-12-25 16:10:26.913 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5193/api/tasks - - - 307 0 - 29.3397ms
+2023-12-25 16:10:26.913 +02:00 [DBG] Connection id "0HN05ACV7QBMR" accepted.
+2023-12-25 16:10:26.913 +02:00 [DBG] Connection id "0HN05ACV7QBMR" received FIN.
+2023-12-25 16:10:26.913 +02:00 [DBG] Connection id "0HN05ACV7QBMR" started.
+2023-12-25 16:10:26.913 +02:00 [DBG] Connection id "0HN05ACV7QBMS" accepted.
+2023-12-25 16:10:26.913 +02:00 [DBG] Connection id "0HN05ACV7QBMR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-25 16:10:26.913 +02:00 [DBG] Connection id "0HN05ACV7QBMS" started.
+2023-12-25 16:10:26.914 +02:00 [DBG] Connection id "0HN05ACV7QBMR" disconnecting.
+2023-12-25 16:10:26.914 +02:00 [DBG] Connection id "0HN05ACV7QBMR" stopped.
+2023-12-25 16:10:26.962 +02:00 [DBG] Connection 0HN05ACV7QBMS established using the following protocol: "Tls12"
+2023-12-25 16:10:26.963 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:7166/api/tasks - -
+2023-12-25 16:10:26.963 +02:00 [DBG] The request path  does not match the path filter
+2023-12-25 16:10:26.976 +02:00 [DBG] 1 candidate(s) found for the request path '/api/tasks'
+2023-12-25 16:10:26.979 +02:00 [DBG] Endpoint 'TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api)' with route pattern 'api/tasks' is valid for the request path '/api/tasks'
+2023-12-25 16:10:26.979 +02:00 [DBG] Request matched endpoint 'TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api)'
+2023-12-25 16:10:26.992 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2023-12-25 16:10:26.992 +02:00 [INF] Executing endpoint 'TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api)'
+2023-12-25 16:10:27.003 +02:00 [INF] Route matched with {action = "GetAllTasks", controller = "Task"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllTasks() on controller TaskManagmentSystem.Api.TaskController (TaskManagmentSystem.Api).
+2023-12-25 16:10:27.004 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2023-12-25 16:10:27.004 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2023-12-25 16:10:27.004 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2023-12-25 16:10:27.004 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2023-12-25 16:10:27.004 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2023-12-25 16:10:27.004 +02:00 [DBG] Executing controller factory for controller TaskManagmentSystem.Api.TaskController (TaskManagmentSystem.Api)
+2023-12-25 16:10:27.049 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2023-12-25 16:10:27.395 +02:00 [INF] Entity Framework Core 6.0.25 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.25' with options: None
+2023-12-25 16:10:27.434 +02:00 [DBG] Executed controller factory for controller TaskManagmentSystem.Api.TaskController (TaskManagmentSystem.Api)
+2023-12-25 16:10:27.435 +02:00 [INF] Attempting to retrieve all tasks.
+2023-12-25 16:10:27.454 +02:00 [DBG] Compiling query expression: 
+'DbSet<TaskEntity>()'
+2023-12-25 16:10:27.526 +02:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<TaskEntity>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: TaskEntity.TaskId (string) Required PK AfterSave:Throw ValueGenerated.OnAdd MaxLength(36) Ansi, 0], [Property: TaskEntity.CreatedAt (DateTime) Required, 1], [Property: TaskEntity.Description (string) Required MaxLength(255), 2], [Property: TaskEntity.DueDate (DateTime) Required, 3], [Property: TaskEntity.IsActive (bool) Required, 4], [Property: TaskEntity.TaskOwnerId (string) Required FK Index, 5], [Property: TaskEntity.Title (string) Required MaxLength(255), 6], [Property: TaskEntity.UpdatedAt (DateTime) Required, 7] }
+        SELECT t.TaskId, t.CreatedAt, t.Description, t.DueDate, t.IsActive, t.TaskOwnerId, t.Title, t.UpdatedAt
+        FROM Tasks AS t), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, TaskEntity>, 
+    TaskManagmentSystem.Infrastructure.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)'
+2023-12-25 16:10:27.540 +02:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2023-12-25 16:10:27.553 +02:00 [DBG] Created DbCommand for 'ExecuteReader' (11ms).
+2023-12-25 16:10:27.555 +02:00 [DBG] Opening connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-25 16:10:27.688 +02:00 [DBG] Opened connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-25 16:10:27.692 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[TaskId], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[IsActive], [t].[TaskOwnerId], [t].[Title], [t].[UpdatedAt]
+FROM [Tasks] AS [t]
+2023-12-25 16:10:27.707 +02:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[TaskId], [t].[CreatedAt], [t].[Description], [t].[DueDate], [t].[IsActive], [t].[TaskOwnerId], [t].[Title], [t].[UpdatedAt]
+FROM [Tasks] AS [t]
+2023-12-25 16:10:27.720 +02:00 [DBG] Context 'ApplicationDbContext' started tracking 'TaskEntity' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2023-12-25 16:10:27.734 +02:00 [DBG] A data reader was disposed.
+2023-12-25 16:10:27.735 +02:00 [DBG] Closing connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-25 16:10:27.737 +02:00 [DBG] Closed connection to database 'TaskManagmentDB' on server '127.0.0.1,1433'.
+2023-12-25 16:10:27.745 +02:00 [INF] Successfully retrieved all tasks.
+2023-12-25 16:10:27.746 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2023-12-25 16:10:27.747 +02:00 [DBG] No information found on request to perform content negotiation.
+2023-12-25 16:10:27.747 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2023-12-25 16:10:27.747 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2023-12-25 16:10:27.747 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2023-12-25 16:10:27.747 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagmentSystem.Application.Dtos.TaskDto, TaskManagmentSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-25 16:10:27.791 +02:00 [INF] Executed action TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api) in 785.445ms
+2023-12-25 16:10:27.792 +02:00 [INF] Executed endpoint 'TaskManagmentSystem.Api.TaskController.GetAllTasks (TaskManagmentSystem.Api)'
+2023-12-25 16:10:27.792 +02:00 [DBG] Connection id "0HN05ACV7QBMS" completed keep alive response.
+2023-12-25 16:10:27.792 +02:00 [DBG] 'ApplicationDbContext' disposed.
+2023-12-25 16:10:27.793 +02:00 [INF] Request finished HTTP/1.1 GET https://localhost:7166/api/tasks - - - 200 - application/json;+charset=utf-8 830.1150ms
+2023-12-25 16:12:37.674 +02:00 [DBG] Connection id "0HN05ACV7QBMQ" disconnecting.
+2023-12-25 16:12:37.677 +02:00 [DBG] Connection id "0HN05ACV7QBMQ" stopped.
+2023-12-25 16:12:37.679 +02:00 [DBG] Connection id "0HN05ACV7QBMQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-25 16:12:38.679 +02:00 [DBG] Connection id "0HN05ACV7QBMS" disconnecting.
+2023-12-25 16:12:38.681 +02:00 [DBG] Connection id "0HN05ACV7QBMS" stopped.
+2023-12-25 16:12:38.684 +02:00 [DBG] Connection id "0HN05ACV7QBMS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-12-25 16:22:45.652 +02:00 [INF] Application is shutting down...
+2023-12-25 16:22:45.653 +02:00 [DBG] Hosting stopping
+2023-12-25 16:22:45.659 +02:00 [DBG] Hosting stopped
+2023-12-25 16:23:01.622 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2023-12-25 16:23:01.670 +02:00 [DBG] Hosting starting
+2023-12-25 16:23:01.675 +02:00 [INF] User profile is available. Using '/Users/mohamedhamed/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-12-25 16:23:01.676 +02:00 [DBG] Reading data from file '/Users/mohamedhamed/.aspnet/DataProtection-Keys/key-88577373-9d6d-4947-9416-20d46326d4db.xml'.
+2023-12-25 16:23:01.679 +02:00 [DBG] Found key {88577373-9d6d-4947-9416-20d46326d4db}.
+2023-12-25 16:23:01.684 +02:00 [DBG] Considering key {88577373-9d6d-4947-9416-20d46326d4db} with expiration date 2024-03-20 21:21:12Z as default key.
+2023-12-25 16:23:01.685 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2023-12-25 16:23:01.686 +02:00 [DBG] Using managed symmetric algorithm 'System.Security.Cryptography.Aes'.
+2023-12-25 16:23:01.686 +02:00 [DBG] Using managed keyed hash algorithm 'System.Security.Cryptography.HMACSHA256'.
+2023-12-25 16:23:01.688 +02:00 [DBG] Using key {88577373-9d6d-4947-9416-20d46326d4db} as the default key.
+2023-12-25 16:23:01.689 +02:00 [DBG] Key ring with default key {88577373-9d6d-4947-9416-20d46326d4db} was loaded during application startup.
+2023-12-25 16:23:01.748 +02:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 96B2898668BD7D1A42B838ABCF1EA7C4F34CC425)
+2023-12-25 16:23:01.757 +02:00 [INF] Now listening on: https://localhost:7166
+2023-12-25 16:23:01.757 +02:00 [INF] Now listening on: http://localhost:5193
+2023-12-25 16:23:01.757 +02:00 [DBG] Loaded hosting startup assembly TaskManagmentSystem.Api
+2023-12-25 16:23:01.757 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-25 16:23:01.757 +02:00 [INF] Hosting environment: Development
+2023-12-25 16:23:01.757 +02:00 [INF] Content root path: /Volumes/Mohamed/Projects/DotNet/TaskManagmentSystem/TaskManagmentSystem.Api/
+2023-12-25 16:23:01.757 +02:00 [DBG] Hosting started
+2023-12-25 22:57:36.915 +02:00 [INF] Application is shutting down...
+2023-12-25 22:57:36.916 +02:00 [DBG] Hosting stopping
+2023-12-25 22:57:36.931 +02:00 [DBG] Hosting stopped
