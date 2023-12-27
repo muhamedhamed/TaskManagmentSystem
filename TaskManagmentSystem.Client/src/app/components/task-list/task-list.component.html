@@ -1,11 +1,8 @@
-<section>
-  <form>
-    <input type="text" placeholder="Filter by city">
-    <button class="primary" type="button">Search</button>
-  </form>
-</section>
-<section class="results">
-  <app-task-detail></app-task-detail>
+<section class="listing">
+  <img class="listing-photo" src="https://picsum.photos/330/250" alt="Static photo for the task">
+  <h2 class="listing-title">{{ task.title }}</h2>
+  <p class="listing-description">{{ task.description }}</p>
+  <a [routerLink]="['/details', task.taskId]">Learn More</a>
 </section>
 
   

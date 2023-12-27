@@ -1,1 +1,12 @@
-<p>task-form works!</p>
+<section class="listing">
+    <h2 class="section-heading">Add New Task</h2>
+    <form [formGroup]="addTask" (submit)="submitTask()">
+      <label for="title">Task Title</label>
+      <input id="title" type="text" formControlName="title">
+
+      <label for="description">Description</label>
+      <input id="description" type="text" formControlName="description">
+
+      <button type="submit" class="primary">Add now</button>
+    </form>
+</section>

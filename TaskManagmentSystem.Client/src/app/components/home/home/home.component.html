@@ -1,0 +1,10 @@
+<section>
+    <form>
+      <input type="text" placeholder="Filter by task" #filter>
+      <button class="primary" type="button" 
+      (Click)="filterResults(filter.value)" >Search</button>
+    </form>
+</section>
+<section class="results">
+    <app-task-list *ngFor="let task of filteredTaskList" [task]="task"></app-task-list>
+</section>

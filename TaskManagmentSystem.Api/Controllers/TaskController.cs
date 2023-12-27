@@ -82,7 +82,7 @@ public class TaskController : ControllerBase
 
     [HttpPost]
     [ActionName("AddTask")]
-    [Authorize]
+    // [Authorize]
     public IActionResult AddTask([FromBody] TaskDto taskDto)
     {
         try

@@ -1,1 +1,19 @@
-<p>task-detail works!</p>
+<article>
+    <img class="listing-photo" src="https://picsum.photos/530/350" alt="Exterior photo of Nothing"/>
+    <section class="listing-description">
+      <h4 class="listing-title">Task Name: {{ task?.title }}</h4>
+      <p class="listing-description">Description: {{ task?.description }}</p>
+    </section>
+    <section class="listing-features">
+      <h2 class="section-heading">More Information About the task</h2>
+      <ul>
+        <li>Created at: {{task?.createdAt}}</li>
+        <li>Due Date: {{task?.dueDate}}</li>
+        <li>User Id: {{task?.taskOwnerId}}</li>
+      </ul>
+    </section>
+
+    <button type="submit" class="btn primary" [routerLink]="['/add']">Add Task</button>
+  </article>
+
+
