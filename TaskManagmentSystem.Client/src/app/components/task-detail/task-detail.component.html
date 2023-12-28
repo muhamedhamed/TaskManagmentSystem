@@ -1,19 +1,30 @@
-<article>
-    <img class="listing-photo" src="https://picsum.photos/530/350" alt="Exterior photo of Nothing"/>
-    <section class="listing-description">
-      <h4 class="listing-title">Task Name: {{ task?.title }}</h4>
-      <p class="listing-description">Description: {{ task?.description }}</p>
-    </section>
-    <section class="listing-features">
-      <h2 class="section-heading">More Information About the task</h2>
-      <ul>
-        <li>Created at: {{task?.createdAt}}</li>
-        <li>Due Date: {{task?.dueDate}}</li>
-        <li>User Id: {{task?.taskOwnerId}}</li>
-      </ul>
-    </section>
+<article class="container-fluid">
+  <div class="row">
+    <div class="col-lg-5">
+      <img src="https://picsum.photos/600/400" alt="Task Photo" class="img-fluid rounded">
+    </div>
 
-    <button type="submit" class="btn primary" [routerLink]="['/add']">Add Task</button>
-  </article>
+    <div class="col-lg-7">
+      <div class="card mt-3">
+        <div class="card-body">
+          <h4 class="card-title">Task Title: {{ task?.title }}</h4>
+          <p class="card-text">Description: {{ task?.description }}</p>
+        </div>
+      </div>
 
+      <div class="mt-3">
+        <h2 class="section-heading">More Information About the Task</h2>
+        <ul class="list-unstyled">
+          <li><strong>Created at:</strong> {{ task?.createdAt | date:'medium' }}</li>
+          <li><strong>Due Date:</strong> {{ task?.dueDate | date:'medium' }}</li>
+          <li><strong>User Id:</strong> {{ task?.taskOwnerId }}</li>
+        </ul>
+      </div>
 
+      <div class="mt-5">
+        <button type="button" class="btn btn-success mr-2" (click)="updateTask(taskId)">Edit</button>
+        <button type="button" class="btn btn-danger mr-2" (click)="deleteTask(taskId)">Delete</button>
+      </div>
+    </div>
+  </div>
+</article>

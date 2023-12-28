@@ -118,7 +118,7 @@ public class TaskController : ControllerBase
 
     [HttpPut("{id}")]
     [ActionName("UpdateTask")]
-    [Authorize]
+    // [Authorize]
     public IActionResult UpdateTask(string id, [FromBody] TaskDto taskDto)
     {
         try
@@ -153,12 +153,13 @@ public class TaskController : ControllerBase
                 return NotFound($"Task with ID {id} not found.");
             }
 
-            var userIdFromToken = User.Claims.FirstOrDefault(c => c.Type == "userId")?.Value;
-            if (existingTask.TaskOwnerId != userIdFromToken)
-            {
-                _logger.LogError("User does not have permission to update this task info.");
-                return Forbid("User does not have permission to update this task info.");
-            }
+            // //Commet the following line of code to enable work on UI
+            // var userIdFromToken = User.Claims.FirstOrDefault(c => c.Type == "userId")?.Value;
+            // if (existingTask.TaskOwnerId != userIdFromToken)
+            // {
+            //     _logger.LogError("User does not have permission to update this task info.");
+            //     return Forbid("User does not have permission to update this task info.");
+            // }
 
             // Update the user
             _taskService.UpdateTask(taskDto, id);
@@ -175,7 +176,7 @@ public class TaskController : ControllerBase
 
     [HttpDelete("{id}")]
     [ActionName("DeleteTask")]
-    [Authorize]
+    // [Authorize]
     public IActionResult DeleteTask(string id)
     {
         try
@@ -196,12 +197,13 @@ public class TaskController : ControllerBase
                 return NotFound($"Task with ID {id} not found.");
             }
 
-            var userIdFromToken = User.Claims.FirstOrDefault(c => c.Type == "userId")?.Value;
-            if (existingTask.TaskOwnerId != userIdFromToken)
-            {
-                _logger.LogError("User does not have permission to delete this task info.");
-                return Forbid("User does not have permission to delete this task info.");
-            }
+            // //Commet the following line of code to enable work on UI
+            // var userIdFromToken = User.Claims.FirstOrDefault(c => c.Type == "userId")?.Value;
+            // if (existingTask.TaskOwnerId != userIdFromToken)
+            // {
+            //     _logger.LogError("User does not have permission to delete this task info.");
+            //     return Forbid("User does not have permission to delete this task info.");
+            // }
 
             // Delete the task
             _taskService.DeleteTask(id);

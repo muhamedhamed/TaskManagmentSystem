@@ -69,7 +69,11 @@
               "buildTarget": "TaskManagmentSystem.Client:build:development"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "development",
+          "options": {
+            "sslKey": "TaskManagmentSystem.Client/localhost.pem",
+            "sslCert": "TaskManagmentSystem.Client/localhost.pem"
+          }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",

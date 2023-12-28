@@ -1,99 +1,86 @@
 import { Injectable } from '@angular/core';
 import { Task } from '../../interfaces/task';
+import { Observable, throwError } from 'rxjs';
+import { catchError, map } from 'rxjs/operators';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root',
 })
 export class TaskService {
-  private apiUrl: string;
+  constructor(private http: HttpClient) {}
 
-  constructor() {
-    this.apiUrl = 'http://localhost:5193';
-  }
+  public apiUrl = 'http://localhost:5193';
 
   protected taskList: Task[] = [];
 
-  async getAllTasks(): Promise<Task[]> {
-    try {
-      const data = await fetch(`${this.apiUrl}/api/tasks`, {
-        redirect: 'follow',
-      });
+  getAllTasks(): Observable<Task[]> {
+    const url = `${this.apiUrl}/api/tasks`;
 
-      if (!data.ok) {
-        throw new Error(`Failed to fetch tasks. Status: ${data.status}`);
-      }
-
-      return (await data.json()) ?? [];
-    } catch (error) {
-      console.error('Error fetching tasks:', error);
-      return [];
-    }
-  }
-
-  async getTaskById(taskId: string): Promise<Task | undefined> {
-    try {
-      const data = await fetch(`${this.apiUrl}/api/tasks/${taskId}`);
-
-      if (!data.ok) {
-        console.error(
-          `Failed to fetch task with Id: ${taskId}. Status: ${data.status}`
-        );
-        // Handle the error appropriately, e.g., return undefined or throw a custom error.
-        return undefined;
-      }
-      const jsonData = await data.json();
-
-      // Ensure jsonData is an object before returning
-      if (typeof jsonData === 'object' && jsonData !== null) {
-        return jsonData as Task;
-      } else {
-        console.error(`Invalid JSON data for task with Id: ${taskId}`);
-        // Handle the error appropriately, e.g., return undefined or throw a custom error.
-        return undefined;
-      }
-    } catch (error) {
-      console.error('Error fetching task:', error);
-      // Handle the error appropriately, e.g., return undefined or throw a custom error.
-      return undefined;
-    }
-  }
-
-  submitTask(title: string, description: string) {
-    console.log(
-      `Task Owner information: firstName: ${title}, lastName: ${description}`
+    return this.http.get<Task[]>(url).pipe(
+      catchError((error) => {
+        console.error('Error fetching tasks:', error);
+        return throwError('Failed to fetch tasks.');
+      })
     );
   }
 
-  async addNewTask(newTask: Task): Promise<Task | undefined> {
-    try {
-      const response = await fetch(`${this.apiUrl}/api/tasks`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(newTask),
-      });
+  getTaskById(taskId: string): Observable<Task | undefined> {
+    const url = `${this.apiUrl}/api/tasks/${taskId}`;
 
-      if (!response.ok) {
-        console.error(`Failed to add a new task. Status: ${response.status}`);
-        // Handle the error appropriately, e.g., return undefined or throw a custom error.
-        return undefined;
-      }
+    return this.http.get<Task>(url).pipe(
+      catchError((error) => {
+        console.error(
+          `Failed to fetch task with Id: ${taskId}. Error: `,
+          error
+        );
+        return throwError(`Failed to fetch task with Id: ${taskId}`);
+      })
+    );
+  }
 
-      const addedTask = await response.json();
+  addNewTask(newTask: any): Observable<Task | undefined> {
+    debugger;
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+    });
 
-      // Ensure addedTask is an object before returning
-      if (typeof addedTask === 'object' && addedTask !== null) {
-        return addedTask as Task;
-      } else {
-        console.error('Invalid JSON data for the added task');
-        // Handle the error appropriately, e.g., return undefined or throw a custom error.
-        return undefined;
-      }
-    } catch (error) {
-      console.error('Error adding a new task:', error);
-      // Handle the error appropriately, e.g., return undefined or throw a custom error.
-      return undefined;
-    }
+    return this.http.post(`${this.apiUrl}/api/tasks`, newTask, { headers })
+      .pipe(
+        map((addedTask: any) => addedTask),
+        catchError((error) => {
+          console.error('Error adding a new task:', error);
+          return throwError('Failed to add a new task.');
+        })
+      );
+  }
+
+  updateTask(taskId: string, updatedTask: any): Observable<Task | undefined> {
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+    });
+
+    const url = `${this.apiUrl}/api/tasks/${taskId}`;
+
+    return this.http.put(url, updatedTask, { headers }).pipe(
+      map((editedTask: any) => editedTask),
+      catchError((error) => {
+        console.error(`Error updating task with ID ${taskId}:`, error);
+        return throwError('Failed to update task.');
+      })
+    );
+  }
+
+  deleteTask(taskId: string): Observable<void> {
+    debugger
+    const url = `${this.apiUrl}/api/tasks/${taskId}`;
+
+    return this.http.delete<void>(url).pipe(
+      catchError((error) => {
+        console.error(`Error deleting task with ID ${taskId}:`, error);
+        return throwError('Failed to delete task.');
+      })
+    );
   }
 }
+
