@@ -2,8 +2,6 @@ import { Component, inject } from '@angular/core';
 import { TaskService } from '../../services/task/task.service';
 import { Task } from '../../interfaces/task';
 import { RouterModule } from '@angular/router';
-import { MatDatepickerModule } from '@angular/material/datepicker';
-import { MatInputModule } from '@angular/material/input';
 import {FormControl,FormGroup,ReactiveFormsModule} from '@angular/forms';
 
 
@@ -13,8 +11,6 @@ import {FormControl,FormGroup,ReactiveFormsModule} from '@angular/forms';
   imports: [
     ReactiveFormsModule,
     RouterModule,
-    MatDatepickerModule,
-    MatInputModule,
   ],
   templateUrl: './task-form.component.html',
   styleUrl: './task-form.component.css',
@@ -62,15 +58,8 @@ export class TaskFormComponent {
       console.error('Form is invalid. Please provide valid inputs.');
     }
   }
-
-  updateTask() {
-    // Implement logic for updating a task
-  }
-
-  deleteTask() {
-    // Implement logic for deleting a task
-  }
 }
+//Not work as expected
 function uuidv4(): string {
   throw new Error('Function not implemented.');
 }

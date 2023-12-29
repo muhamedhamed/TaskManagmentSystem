@@ -1,4 +1,4 @@
-import { Component,Input, inject} from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Task } from '../../interfaces/task';
 import { RouterModule } from '@angular/router';
@@ -8,24 +8,19 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-task-list',
   standalone: true,
-  imports: [CommonModule,RouterModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './task-list.component.html',
   styleUrls: ['./task-list.component.css'],
 })
-
 export class TaskListComponent {
-  router: Router = inject(Router);
   @Input() task!: Task;
   tasks: Task[] = [];
 
-  taskService = inject(TaskService);
-
-  updateTask(taskId:string) {
-
-  }
+  router: Router = inject(Router);
+  taskService: TaskService = inject(TaskService);
 
   deleteTask(taskId: string) {
-    debugger
+    debugger;
     this.taskService.deleteTask(taskId).subscribe(
       () => {
         console.log(`Task with ID ${taskId} deleted successfully.`);

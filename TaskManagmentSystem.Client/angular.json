@@ -71,8 +71,7 @@
           },
           "defaultConfiguration": "development",
           "options": {
-            "sslKey": "TaskManagmentSystem.Client/localhost.pem",
-            "sslCert": "TaskManagmentSystem.Client/localhost.pem"
+
           }
         },
         "extract-i18n": {

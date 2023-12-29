@@ -1,20 +1,22 @@
-import { Injectable } from '@angular/core';
+import { Injectable, inject } from '@angular/core';
 import { Task } from '../../interfaces/task';
 import { Observable, throwError } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient, HttpHeaders} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root',
 })
+
 export class TaskService {
-  constructor(private http: HttpClient) {}
+  http =inject(HttpClient);
+
+  constructor() {}
 
   public apiUrl = 'http://localhost:5193';
 
-  protected taskList: Task[] = [];
-
   getAllTasks(): Observable<Task[]> {
+    debugger
     const url = `${this.apiUrl}/api/tasks`;
 
     return this.http.get<Task[]>(url).pipe(
@@ -44,8 +46,8 @@ export class TaskService {
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
     });
-
-    return this.http.post(`${this.apiUrl}/api/tasks`, newTask, { headers })
+    return this.http
+      .post(`${this.apiUrl}/api/tasks`, newTask, { headers })
       .pipe(
         map((addedTask: any) => addedTask),
         catchError((error) => {
@@ -56,6 +58,7 @@ export class TaskService {
   }
 
   updateTask(taskId: string, updatedTask: any): Observable<Task | undefined> {
+    debugger
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
     });
@@ -72,7 +75,7 @@ export class TaskService {
   }
 
   deleteTask(taskId: string): Observable<void> {
-    debugger
+    debugger;
     const url = `${this.apiUrl}/api/tasks/${taskId}`;
 
     return this.http.delete<void>(url).pipe(
@@ -83,4 +86,3 @@ export class TaskService {
     );
   }
 }
-

@@ -5,7 +5,7 @@
       <h5 class="card-title">{{ task.title }}</h5>
       <p class="card-text">{{ task.description }}</p>
       <a [routerLink]="['/details', task.taskId]" class="btn btn-primary btn-action mr-2">More Detail</a>
-      <button class="btn btn-success btn-action mr-2" (click)="updateTask(task.taskId)"[routerLink]="['/add', { taskData: task | json }]">Edit</button>
+      <a [routerLink]="['/update', task.taskId]" class="btn btn-success btn-action mr-2">Edit</a>
       <button class="btn btn-danger btn-action" (click)="deleteTask(task.taskId)">Delete</button>
     </div>
   </div>

@@ -14,19 +14,23 @@ import { ReactiveFormsModule } from '@angular/forms';
   templateUrl: './task-detail.component.html',
   styleUrl: './task-detail.component.css',
 })
+
 export class TaskDetailComponent implements OnInit {
   taskId: string;
+  task: Task | undefined;
+
   route: ActivatedRoute = inject(ActivatedRoute);
   router: Router = inject(Router);
-  taskService = inject(TaskService);
-  task: Task | undefined;
+  taskService: TaskService = inject(TaskService);
 
   constructor() {
     this.taskId = '';
   }
+
   ngOnInit() {
     this.displayTaskDetails();
   }
+
   displayTaskDetails() {
     this.taskId = this.route.snapshot.params['taskId'];
     this.taskService.getTaskById(this.taskId).subscribe(
@@ -39,14 +43,10 @@ export class TaskDetailComponent implements OnInit {
     );
   }
 
-  updateTask(taskId: string) {}
-
   deleteTask(taskId: string) {
     this.taskService.deleteTask(this.taskId).subscribe(
       () => {
         console.log(`Task with ID ${this.taskId} deleted successfully.`);
-        // I should Add refresh the list here
-        // I shoud navigate back to the list task componant
         this.router.navigate(['/']);
       },
       (error) => {
